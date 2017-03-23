@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F540230B1E82286C001A4140 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230A1E82286C001A4140 /* HHPerson.swift */; };
+		F540230D1E8229D7001A4140 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230C1E8229D7001A4140 /* HHCell.swift */; };
+		F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230E1E8251F6001A4140 /* HHBaseVC.swift */; };
+		F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D51E83A307001A4140 /* HHAnimationCell.swift */; };
+		F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025D61E83A307001A4140 /* HHAnimationCell.xib */; };
+		F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */; };
 		F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46561E80B75C004594AC /* HHTabBarVC.swift */; };
 		F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46581E80B8D5004594AC /* FirstViewController.swift */; };
 		F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F465A1E80B8E4004594AC /* SecondViewController.swift */; };
@@ -18,7 +24,6 @@
 		F54F46671E80D99B004594AC /* cellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46661E80D99B004594AC /* cellModel.swift */; };
 		F54F46691E81019C004594AC /* HHTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46681E81019C004594AC /* HHTool.swift */; };
 		F58A28D81E72734A003A7728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A28D71E72734A003A7728 /* AppDelegate.swift */; };
-		F58A28DA1E72734A003A7728 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A28D91E72734A003A7728 /* ViewController.swift */; };
 		F58A28DD1E72734A003A7728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DB1E72734A003A7728 /* Main.storyboard */; };
 		F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DE1E72734A003A7728 /* Assets.xcassets */; };
 		F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */; };
@@ -37,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F540230A1E82286C001A4140 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
+		F540230C1E8229D7001A4140 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
+		F540230E1E8251F6001A4140 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
+		F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		F54025D51E83A307001A4140 /* HHAnimationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationCell.swift; sourceTree = "<group>"; };
+		F54025D61E83A307001A4140 /* HHAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAnimationCell.xib; sourceTree = "<group>"; };
+		F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableAnimationVC.swift; sourceTree = "<group>"; };
 		F54F46561E80B75C004594AC /* HHTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTabBarVC.swift; sourceTree = "<group>"; };
 		F54F46581E80B8D5004594AC /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F54F465A1E80B8E4004594AC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +61,6 @@
 		F54F46681E81019C004594AC /* HHTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTool.swift; sourceTree = "<group>"; };
 		F58A28D41E72734A003A7728 /* HHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A28D71E72734A003A7728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F58A28D91E72734A003A7728 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F58A28DC1E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F58A28DE1E72734A003A7728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F58A28E11E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,15 +111,20 @@
 			isa = PBXGroup;
 			children = (
 				F58A28D71E72734A003A7728 /* AppDelegate.swift */,
+				F540230E1E8251F6001A4140 /* HHBaseVC.swift */,
 				F54F46681E81019C004594AC /* HHTool.swift */,
 				F54F46561E80B75C004594AC /* HHTabBarVC.swift */,
 				F54F46581E80B8D5004594AC /* FirstViewController.swift */,
 				F54F465A1E80B8E4004594AC /* SecondViewController.swift */,
 				F54F465C1E80B8F1004594AC /* ThirdViewController.swift */,
 				F54F465E1E80B8FD004594AC /* ForthViewController.swift */,
-				F58A28D91E72734A003A7728 /* ViewController.swift */,
+				F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */,
 				F5E437A11E7FE63000AD0905 /* HHScrollView.swift */,
 				F54F46661E80D99B004594AC /* cellModel.swift */,
+				F540230A1E82286C001A4140 /* HHPerson.swift */,
+				F540230C1E8229D7001A4140 /* HHCell.swift */,
+				F54025D51E83A307001A4140 /* HHAnimationCell.swift */,
+				F54025D61E83A307001A4140 /* HHAnimationCell.xib */,
 				F58A28DB1E72734A003A7728 /* Main.storyboard */,
 				F58A28DE1E72734A003A7728 /* Assets.xcassets */,
 				F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */,
@@ -116,6 +132,7 @@
 				F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */,
 				F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */,
 				F58A28E31E72734A003A7728 /* Info.plist */,
+				F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */,
 			);
 			path = HHSwift;
 			sourceTree = "<group>";
@@ -179,6 +196,7 @@
 				TargetAttributes = {
 					F58A28D31E72734A003A7728 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					F58A28E71E72734A003A7728 = {
@@ -212,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */,
 				F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */,
 				F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */,
 				F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */,
@@ -235,15 +254,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F540230B1E82286C001A4140 /* HHPerson.swift in Sources */,
 				F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */,
 				F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */,
+				F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */,
 				F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */,
 				F54F46691E81019C004594AC /* HHTool.swift in Sources */,
+				F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */,
 				F54F465D1E80B8F1004594AC /* ThirdViewController.swift in Sources */,
-				F58A28DA1E72734A003A7728 /* ViewController.swift in Sources */,
+				F540230D1E8229D7001A4140 /* HHCell.swift in Sources */,
 				F5E437A21E7FE63000AD0905 /* HHScrollView.swift in Sources */,
 				F54F46671E80D99B004594AC /* cellModel.swift in Sources */,
 				F54F465F1E80B8FD004594AC /* ForthViewController.swift in Sources */,
+				F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */,
 				F58A28D81E72734A003A7728 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HHSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHSwift/HHSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -393,10 +419,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HHSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HHSwift/HHSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

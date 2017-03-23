@@ -10,27 +10,39 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .green
         self.navigationItem.title = "第二页"
-        // Do any additional setup after loading the view.
+        self.view.addSubview(self.loginBtn)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    fileprivate lazy var loginBtn:UIButton = {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let btn = UIButton.init(type: UIButtonType.custom)
+        btn.frame = CGRect.init(x: kWidth/2 - 100/2, y: 100, width: 100, height: 60)
+        btn.addTarget(self, action: #selector(login), for: UIControlEvents.touchUpInside)
+        
+        btn.setTitle("登陆", for: .normal)
+        btn.backgroundColor = .red
+        return btn
+    }()
+    
+    @objc func login(btn:UIButton) {
+        let third = ThirdViewController()
+        
+        if (self.navigationController?.viewControllers.count)! > 1 {
+            self.navigationController?.pushViewController(third, animated: true)
+        }else{
+            let nav = UINavigationController.init(rootViewController: third)
+            self.navigationController?.present(nav, animated: true, completion: { 
+                
+            })
+        }
+        
+//        third.hidesBottomBarWhenPushed = true
+        
     }
-    */
-
 }

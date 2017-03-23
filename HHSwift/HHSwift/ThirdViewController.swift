@@ -15,22 +15,29 @@ class ThirdViewController: UIViewController {
         self.view.backgroundColor = .blue
         self.navigationItem.title = "第三页"
         // Do any additional setup after loading the view.
+        view.addSubview(loginBtn)
+        print("按钮的右侧按钮坐标：", kView_mx(view: loginBtn))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    fileprivate lazy var loginBtn:UIButton = {
+        
+        let btn = UIButton.init(type: UIButtonType.custom)
+        btn.frame = CGRect.init(x: kWidth/2 - 100/2, y: 100, width: 100, height: 60)
+        btn.addTarget(self, action: #selector(logout), for: UIControlEvents.touchUpInside)
+        
+        btn.setTitle("退出", for: .normal)
+        btn.backgroundColor = .red
+        return btn
+    }()
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func logout(btn:UIButton) {
+        if (self.navigationController?.viewControllers.count)! > 1 {
+            self.navigationController?.popViewController(animated: true)
+        }else {
+            self.navigationController?.dismiss(animated: true, completion: { 
+                
+            })
+        }
     }
-    */
 
 }

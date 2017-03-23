@@ -10,6 +10,8 @@ var reversedNames = names.sorted(by:backward)
 reversedNames = names.sorted(by:backward)
 print(reversedNames)
 
+reversedNames = names.sorted(by:backward)
+
 //闭包的表达式 语法是下面的形式
 /*
 { (parameters) -> (return type) in statements
@@ -22,10 +24,10 @@ print(reversedNames)
 func someFunctionThatTakesAClosure(clous:() -> Int) ->Int {
  
     print("尾随闭包")
-    return 10
+    return 100000
 }
 someFunctionThatTakesAClosure {
-    return 10
+    return 1000
 }
 
 someFunctionThatTakesAClosure { () -> Int in

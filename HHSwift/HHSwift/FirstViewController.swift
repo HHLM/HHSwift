@@ -50,7 +50,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     /// 懒加载的写法本质上是定义并执行一个闭包
     
     fileprivate lazy var table:UITableView  = {
-        let myTable = UITableView(frame: CGRect(x: 0, y: 0, width: HHTool().kWidth, height: HHTool().kHeight))
+        let myTable = UITableView(frame: CGRect(x: 0, y: 0, width: kWidth, height: kHeight))
         myTable.delegate = self
         myTable.dataSource = self
         return myTable
