@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
 		F540230B1E82286C001A4140 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230A1E82286C001A4140 /* HHPerson.swift */; };
 		F540230D1E8229D7001A4140 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230C1E8229D7001A4140 /* HHCell.swift */; };
 		F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230E1E8251F6001A4140 /* HHBaseVC.swift */; };
 		F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D51E83A307001A4140 /* HHAnimationCell.swift */; };
 		F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025D61E83A307001A4140 /* HHAnimationCell.xib */; };
 		F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */; };
+		F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */; };
+		F54025DE1E83D7B2001A4140 /* HHImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */; };
+		F54025E01E83DA4E001A4140 /* HHTableImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */; };
 		F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46561E80B75C004594AC /* HHTabBarVC.swift */; };
 		F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46581E80B8D5004594AC /* FirstViewController.swift */; };
 		F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F465A1E80B8E4004594AC /* SecondViewController.swift */; };
@@ -42,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
 		F540230A1E82286C001A4140 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
 		F540230C1E8229D7001A4140 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
 		F540230E1E8251F6001A4140 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		F54025D51E83A307001A4140 /* HHAnimationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationCell.swift; sourceTree = "<group>"; };
 		F54025D61E83A307001A4140 /* HHAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAnimationCell.xib; sourceTree = "<group>"; };
 		F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableAnimationVC.swift; sourceTree = "<group>"; };
+		F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHImageViewCell.swift; sourceTree = "<group>"; };
+		F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHImageViewCell.xib; sourceTree = "<group>"; };
+		F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableImageVC.swift; sourceTree = "<group>"; };
 		F54F46561E80B75C004594AC /* HHTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTabBarVC.swift; sourceTree = "<group>"; };
 		F54F46581E80B8D5004594AC /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F54F465A1E80B8E4004594AC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5179CED1E84F1F300F6289A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F5179CEE1E84F21400F6289A /* HPanCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F58A28CB1E72734A003A7728 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +126,7 @@
 		F58A28D61E72734A003A7728 /* HHSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F5179CED1E84F1F300F6289A /* Cell */,
 				F58A28D71E72734A003A7728 /* AppDelegate.swift */,
 				F540230E1E8251F6001A4140 /* HHBaseVC.swift */,
 				F54F46681E81019C004594AC /* HHTool.swift */,
@@ -119,10 +136,13 @@
 				F54F465C1E80B8F1004594AC /* ThirdViewController.swift */,
 				F54F465E1E80B8FD004594AC /* ForthViewController.swift */,
 				F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */,
+				F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */,
 				F5E437A11E7FE63000AD0905 /* HHScrollView.swift */,
 				F54F46661E80D99B004594AC /* cellModel.swift */,
 				F540230A1E82286C001A4140 /* HHPerson.swift */,
 				F540230C1E8229D7001A4140 /* HHCell.swift */,
+				F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */,
+				F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */,
 				F54025D51E83A307001A4140 /* HHAnimationCell.swift */,
 				F54025D61E83A307001A4140 /* HHAnimationCell.xib */,
 				F58A28DB1E72734A003A7728 /* Main.storyboard */,
@@ -232,6 +252,7 @@
 			files = (
 				F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */,
 				F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */,
+				F54025DE1E83D7B2001A4140 /* HHImageViewCell.xib in Resources */,
 				F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */,
 				F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */,
 				F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */,
@@ -254,11 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */,
 				F540230B1E82286C001A4140 /* HHPerson.swift in Sources */,
 				F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */,
 				F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */,
+				F54025E01E83DA4E001A4140 /* HHTableImageVC.swift in Sources */,
 				F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */,
 				F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */,
+				F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */,
 				F54F46691E81019C004594AC /* HHTool.swift in Sources */,
 				F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */,
 				F54F465D1E80B8F1004594AC /* ThirdViewController.swift in Sources */,
