@@ -63,7 +63,23 @@ func kAppPath() -> String! {
     return NSHomeDirectory()
 }
 
+// MARK: - AlertView
 
+func showAlert(title:String, vc:UIViewController) {
+    
+    let alert = UIAlertController.init(title: "温馨提示", message: title, preferredStyle: .alert)
+    let cancel = UIAlertAction.init(title: "知道", style: .cancel, handler: nil)
+    let sure = UIAlertAction.init(title: "确定", style: .destructive, handler:
+    { action in
+        
+        print("点击的确定")
+        
+    })
+    alert.addAction(cancel)
+    alert.addAction(sure)
+    vc.present(alert,animated: true)
+    alert.show(vc, sender: 100)
+}
 
 /**
  - author: 1606

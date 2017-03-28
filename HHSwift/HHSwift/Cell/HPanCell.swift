@@ -94,16 +94,16 @@ class HPanCell: UITableViewCell {
                 if(view3.center.x + translation.x < self.frame.size.width/2-180)//当位置不是最小值，但加上此次偏移量小于最小值，视图固定最小值否，则继续滑动
                 {
                     
-                    View3.center=CGPointMake(self.frame.size.width/2-180, View3.center.y )
+                    view3.center=CGPoint(x: self.frame.size.width/2-180, y:view3.center.y )
                 }
                 else
                 {
-                    View3.center=CGPointMake(View3.center.x + translation.x, View3.center.y )
+                    view3.center=CGPoint(x: view3.center.x + translation.x, y:view3.center.y )
                     
                 }
-                if(View3.center.x + translation.x > self.frame.size.width/2)
+                if(view3.center.x + translation.x > self.frame.size.width/2)
                 {
-                    View3.center=CGPointMake(self.frame.size.width/2, View3.center.y )
+                    view3.center=CGPoint(x: self.frame.size.width/2,y: view3.center.y )
                     begainLeftPan = false
                     
                 }
@@ -111,6 +111,33 @@ class HPanCell: UITableViewCell {
             }
             
         }
+        if(sender.state == UIGestureRecognizerState.ended)
+        {
+            
+            if(view3.center.x + translation.x < self.frame.size.width/2-180)
+            {
+                begainLeftPan = false
+                
+            }
+            
+            if(view3.center.x + translation.x <= self.frame.size.width/2-90)
+            {
+                view3.center=CGPoint(x:self.frame.size.width/2-180, y:view3.center.y )
+                
+            }
+            else
+            {
+                
+                view3.center=CGPoint(x:self.frame.size.width/2, y:view3.center.y )
+                
+            }
+            
+            
+            
+        }
+        
+        sender.setTranslation(CGPoint(x:0, y:0), in: self)
+
         
     }
 

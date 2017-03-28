@@ -18,8 +18,8 @@ class HHTableImageVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         tab.estimatedRowHeight = 60
         tab.rowHeight = UITableViewAutomaticDimension
         tab.separatorInset = UIEdgeInsetsMake(0,15,0,15);
-        tab.register(UINib(nibName:"HHImageViewCell", bundle:nil),
-                     forCellReuseIdentifier:"cell")
+//        tab.register(UINib(nibName:"HHImageViewCell", bundle:nil),
+//                     forCellReuseIdentifier:"cell")
         return tab
     }()
     
@@ -37,15 +37,18 @@ class HHTableImageVC: UIViewController,UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:HHImageViewCell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HHImageViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? HPanCell.init(style: .default, reuseIdentifier: "cell") 
     
         return cell
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell:HHImageViewCell = tableView.cellForRow(at: indexPath) as! HHImageViewCell
-       
-        
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let vc =  HHTableAnimationVC()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 
