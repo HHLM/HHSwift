@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AAE1E8A453700E28892 /* HHBaseVC.swift */; };
+		F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */; };
 		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
 		F540230B1E82286C001A4140 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230A1E82286C001A4140 /* HHPerson.swift */; };
 		F540230D1E8229D7001A4140 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230C1E8229D7001A4140 /* HHCell.swift */; };
-		F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230E1E8251F6001A4140 /* HHBaseVC.swift */; };
 		F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D51E83A307001A4140 /* HHAnimationCell.swift */; };
 		F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025D61E83A307001A4140 /* HHAnimationCell.xib */; };
 		F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */; };
@@ -46,10 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5146AAE1E8A453700E28892 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
+		F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
 		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
 		F540230A1E82286C001A4140 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
 		F540230C1E8229D7001A4140 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
-		F540230E1E8251F6001A4140 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
 		F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		F54025D51E83A307001A4140 /* HHAnimationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationCell.swift; sourceTree = "<group>"; };
 		F54025D61E83A307001A4140 /* HHAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAnimationCell.xib; sourceTree = "<group>"; };
@@ -97,6 +99,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5146AAA1E8A44EA00E28892 /* HHVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HHVC;
+			sourceTree = "<group>";
+		};
+		F5146AAB1E8A44EA00E28892 /* HHView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HHView;
+			sourceTree = "<group>";
+		};
+		F5146AAC1E8A44EA00E28892 /* HHBase */ = {
+			isa = PBXGroup;
+			children = (
+				F5146AAE1E8A453700E28892 /* HHBaseVC.swift */,
+			);
+			path = HHBase;
+			sourceTree = "<group>";
+		};
+		F5146AAD1E8A44EA00E28892 /* HHTool */ = {
+			isa = PBXGroup;
+			children = (
+				F5146AB01E8A457B00E28892 /* Category */,
+			);
+			path = HHTool;
+			sourceTree = "<group>";
+		};
+		F5146AB01E8A457B00E28892 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		F5179CED1E84F1F300F6289A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +166,12 @@
 		F58A28D61E72734A003A7728 /* HHSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F5146AAA1E8A44EA00E28892 /* HHVC */,
+				F5146AAB1E8A44EA00E28892 /* HHView */,
+				F5146AAC1E8A44EA00E28892 /* HHBase */,
+				F5146AAD1E8A44EA00E28892 /* HHTool */,
 				F5179CED1E84F1F300F6289A /* Cell */,
 				F58A28D71E72734A003A7728 /* AppDelegate.swift */,
-				F540230E1E8251F6001A4140 /* HHBaseVC.swift */,
 				F54F46681E81019C004594AC /* HHTool.swift */,
 				F54F46561E80B75C004594AC /* HHTabBarVC.swift */,
 				F54F46581E80B8D5004594AC /* FirstViewController.swift */,
@@ -278,9 +321,9 @@
 				F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */,
 				F540230B1E82286C001A4140 /* HHPerson.swift in Sources */,
 				F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */,
+				F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */,
 				F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */,
 				F54025E01E83DA4E001A4140 /* HHTableImageVC.swift in Sources */,
-				F540230F1E8251F6001A4140 /* HHBaseVC.swift in Sources */,
 				F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */,
 				F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */,
 				F54F46691E81019C004594AC /* HHTool.swift in Sources */,
@@ -290,6 +333,7 @@
 				F5E437A21E7FE63000AD0905 /* HHScrollView.swift in Sources */,
 				F54F46671E80D99B004594AC /* cellModel.swift in Sources */,
 				F54F465F1E80B8FD004594AC /* ForthViewController.swift in Sources */,
+				F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */,
 				F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */,
 				F58A28D81E72734A003A7728 /* AppDelegate.swift in Sources */,
 			);

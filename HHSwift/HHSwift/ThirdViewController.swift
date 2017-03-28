@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController,UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,7 @@ class ThirdViewController: UIViewController {
         print("按钮的右侧按钮坐标：", kView_mx(view: loginBtn))
         view.addSubview(self.switch_1)
         view.addSubview(self.textfiled)
+        view.addSubview(self.progress)
     }
 
     fileprivate lazy var loginBtn:UIButton = {
@@ -46,6 +47,7 @@ class ThirdViewController: UIViewController {
         
     }()
     
+    // MARK: -UITextField
     fileprivate lazy var textfiled:UITextField = {
         
         let txtfiled = UITextField.init(frame: CGRect.init(x: 100, y: 300, width: 280, height: 40))
@@ -54,8 +56,22 @@ class ThirdViewController: UIViewController {
         txtfiled.placeholder = "请输入密码"
         txtfiled.borderStyle = UITextBorderStyle.roundedRect
         txtfiled.font = UIFont.systemFont(ofSize: 16)
+        txtfiled.delegate = self
         return txtfiled
     }()
+    
+    
+    fileprivate lazy var progress:UIProgressView = {
+        
+        let progress = UIProgressView.init(frame: CGRect.init(x: 40, y: 400, width: kWidth - 80, height: 30))
+        progress.progressTintColor = UIColor.red
+        progress.trackTintColor = UIColor.brown
+        progress.progress = 0.5
+        progress.progressViewStyle = .bar
+        return progress
+        
+    }()
+    
 //
     
     @objc func open(swithch:UISwitch) {
@@ -73,6 +89,12 @@ class ThirdViewController: UIViewController {
             })
              showAlert(title: "HHH",vc:self)
         }
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        return true
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
     }
 
 }

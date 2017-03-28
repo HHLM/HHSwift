@@ -46,6 +46,7 @@ class HHTableImageVC: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+       
         let vc =  HHTableAnimationVC()
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
