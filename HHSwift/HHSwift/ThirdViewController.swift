@@ -15,11 +15,15 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         self.view.backgroundColor = .blue
         self.navigationItem.title = "第三页"
         // Do any additional setup after loading the view.
-        view.addSubview(loginBtn)
+        
         print("按钮的右侧按钮坐标：", kView_mx(view: loginBtn))
         view.addSubview(self.switch_1)
         view.addSubview(self.textfiled)
         view.addSubview(self.progress)
+        
+        loginBtn.y = 100.0
+        view.addSubview(loginBtn)
+        print(switch_1.x)
     }
 
     fileprivate lazy var loginBtn:UIButton = {
@@ -51,7 +55,7 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
     fileprivate lazy var textfiled:UITextField = {
         
         let txtfiled = UITextField.init(frame: CGRect.init(x: 100, y: 300, width: 280, height: 40))
-        txtfiled.keyboardType = .numberPad
+        txtfiled.keyboardType = .decimalPad
         txtfiled.isSecureTextEntry = true
         txtfiled.placeholder = "请输入密码"
         txtfiled.borderStyle = UITextBorderStyle.roundedRect

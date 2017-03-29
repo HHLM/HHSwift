@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AAE1E8A453700E28892 /* HHBaseVC.swift */; };
 		F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */; };
+		F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */; };
 		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
 		F540230B1E82286C001A4140 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230A1E82286C001A4140 /* HHPerson.swift */; };
 		F540230D1E8229D7001A4140 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230C1E8229D7001A4140 /* HHCell.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		F5146AAE1E8A453700E28892 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
 		F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
+		F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
 		F540230A1E82286C001A4140 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
 		F540230C1E8229D7001A4140 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */,
+				F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */,
 				F54F46691E81019C004594AC /* HHTool.swift in Sources */,
 				F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */,
+				F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */,
 				F54F465D1E80B8F1004594AC /* ThirdViewController.swift in Sources */,
 				F540230D1E8229D7001A4140 /* HHCell.swift in Sources */,
 				F5E437A21E7FE63000AD0905 /* HHScrollView.swift in Sources */,
