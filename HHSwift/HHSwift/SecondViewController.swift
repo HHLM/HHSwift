@@ -14,9 +14,15 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
+
+        
         self.view.backgroundColor = .green
         self.navigationItem.title = "第二页"
         self.view.addSubview(self.loginBtn)
+        let navBgImage = UIImage.imageWithColor(color: UIColor.blue, size: CGSize.init(width: kWidth, height: 64))
+        navigationController?.navigationBar.setBackgroundImage(navBgImage, for: UIBarMetrics.default)
     }
 
     fileprivate lazy var loginBtn:UIButton = {

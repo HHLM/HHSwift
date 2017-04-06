@@ -12,7 +12,7 @@ class ForthViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
 
     
     var dataArray:Array<String> = []
-    var dataArr:[String] = []
+    var dataArr:[HHBaseVC] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,11 @@ class ForthViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
     }
     func  config()  {
         let arr = ["转场动画","启动动画","加载动画","模态动画","Push动画","Aribnb动画","类似Twitter多张图"]
-        dataArr += arr
+        dataArray += arr
+        let vcs = [HHAnimation1(),HHAnimation2(),HHAnimation3(),
+                   HHAnimation4(),HHAnimation5(),HHAnimation6(),
+                   HHAnimation7()]
+        dataArr += vcs
     }
 
     
@@ -48,21 +52,32 @@ class ForthViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
         if cell == nil  {
             cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
         }
-        cell!.textLabel?.text = dataArr[indexPath.row]
+        cell!.textLabel?.text = dataArray[indexPath.row]
         return cell!
     }
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DLog(indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc =  HHTableAnimationVC()
+        let vc =  dataArr[indexPath.row]
+        
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }
-   
+    
+//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+////        tableView.deselectRow(at: indexPath, animated: true)
+//        DLog(indexPath.row)
+//        let vc =  dataArr[indexPath.row]
+//        
+//        vc.hidesBottomBarWhenPushed = true
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
+//   
     func loadData(finished: (_ html:String) -> ()) {
     
         
     }
-    
 
     /**
      *  @author 1606, 17-03-21 18:03:00
