@@ -56,11 +56,15 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         
         let txtfiled = UITextField.init(frame: CGRect.init(x: 100, y: 300, width: 280, height: 40))
         txtfiled.keyboardType = .decimalPad
+        
         txtfiled.isSecureTextEntry = true
         txtfiled.placeholder = "请输入密码"
         txtfiled.borderStyle = UITextBorderStyle.roundedRect
         txtfiled.font = UIFont.systemFont(ofSize: 16)
         txtfiled.delegate = self
+        print("打印位置")
+        DLog("打印位置")
+        print(HHClassFromString("ThirdViewController") ?? "")
         return txtfiled
     }()
     

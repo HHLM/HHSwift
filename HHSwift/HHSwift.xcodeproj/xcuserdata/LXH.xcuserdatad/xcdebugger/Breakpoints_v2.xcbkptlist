@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HHSwift/FirstViewController.swift"
-            timestampString = "511780632.44092"
+            timestampString = "512471839.104206"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,7 +74,7 @@
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "512447355.793327"
+                  timestampString = "512472544.691477"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
@@ -89,7 +89,7 @@
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "512447355.796588"
+                  timestampString = "512472544.694385"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "53"
@@ -104,7 +104,7 @@
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "512447355.79948"
+                  timestampString = "512472544.697052"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
@@ -119,7 +119,7 @@
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "512447355.802796"
+                  timestampString = "512472544.699583"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
@@ -134,7 +134,7 @@
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "512447355.8064"
+                  timestampString = "512472544.702893"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "52"
@@ -190,6 +190,38 @@
             endingLineNumber = "23"
             landmarkName = "x"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HHSwift/HHTool.swift"
+            timestampString = "512470144.111379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "HHClassFromString(_:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HHSwift/HHTool.swift"
+            timestampString = "512472851.458861"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "DLog(_:fileName:method:line:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

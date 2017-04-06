@@ -90,7 +90,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        let modes:Array<cellModel> = array[indexPath.section] as! Array<cellModel>
+        cell.selectionStyle = .none
+        let modes = array[indexPath.section] as! [cellModel]
         let cmodel = modes[indexPath.row]
         cell.textLabel?.text = cmodel.title
         

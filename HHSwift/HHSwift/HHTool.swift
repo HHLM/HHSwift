@@ -25,11 +25,30 @@ public func kView_heigth(view:UIView) -> CGFloat {
 }
 
 public func kView_mx(view:UIView) -> CGFloat {
-    return view.frame.size.width + view.frame.origin.x
+    return view.frame.maxX
 }
 
 public func kView_my(view:UIView) -> CGFloat {
     return view.frame.size.height + view.frame.origin.y
+}
+
+public func HHClassFromString(_ className:String) -> Swift.AnyClass? {
+
+    let bundleName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as! String
+    return NSClassFromString("\(bundleName).\(className)")
+}
+
+// MARK: - 打印信息
+public func DLog<T>(_ message:T,fileName:String = #file,method:String = #function,line:Int = #line) {
+
+    #if DEBUG
+    let str = (fileName as NSString).pathComponents.last!.replacingOccurrences(of: ".swift", with: "")
+    print("\(str) ->: \(method) ->: \(line)行 ->:\n \(message)")
+    #else
+        let array = fileName.components(separatedBy: "/")
+        print(array.last ?? "")
+        
+    #endif
 }
 
 // MARK: - 颜色
@@ -51,6 +70,11 @@ func kRGB(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
     return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }
 
+// MARK: -随机颜色
+func kColorRandom() ->UIColor {
+    
+    return kRGB(r: CGFloat(arc4random()%255), g: CGFloat(arc4random()%255), b: CGFloat(arc4random()%255), a: 1)
+}
 
 
 // MARK: -路径
@@ -100,8 +124,6 @@ func kBundleDocumentPath() -> String! {
 func kCachesPath() -> String! {
     return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first
 }
-
-
 
 class HHTool: NSObject {
     

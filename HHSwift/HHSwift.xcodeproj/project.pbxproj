@@ -70,7 +70,7 @@
 		F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@2x.png"; sourceTree = "<group>"; };
 		F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@3x.png"; sourceTree = "<group>"; };
 		F54F46661E80D99B004594AC /* cellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellModel.swift; sourceTree = "<group>"; };
-		F54F46681E81019C004594AC /* HHTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTool.swift; sourceTree = "<group>"; };
+		F54F46681E81019C004594AC /* HHTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HHTool.swift; path = HHSwift/HHTool.swift; sourceTree = SOURCE_ROOT; };
 		F58A28D41E72734A003A7728 /* HHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A28D71E72734A003A7728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F58A28DC1E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +101,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5098D8A1E8E0085008D468C /* HHAnimations */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HHAnimations;
+			sourceTree = "<group>";
+		};
 		F5146AAA1E8A44EA00E28892 /* HHVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +133,7 @@
 		F5146AAD1E8A44EA00E28892 /* HHTool */ = {
 			isa = PBXGroup;
 			children = (
+				F54F46681E81019C004594AC /* HHTool.swift */,
 				F5146AB01E8A457B00E28892 /* Category */,
 			);
 			path = HHTool;
@@ -169,13 +177,13 @@
 		F58A28D61E72734A003A7728 /* HHSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F5098D8A1E8E0085008D468C /* HHAnimations */,
 				F5146AAA1E8A44EA00E28892 /* HHVC */,
 				F5146AAB1E8A44EA00E28892 /* HHView */,
 				F5146AAC1E8A44EA00E28892 /* HHBase */,
 				F5146AAD1E8A44EA00E28892 /* HHTool */,
 				F5179CED1E84F1F300F6289A /* Cell */,
 				F58A28D71E72734A003A7728 /* AppDelegate.swift */,
-				F54F46681E81019C004594AC /* HHTool.swift */,
 				F54F46561E80B75C004594AC /* HHTabBarVC.swift */,
 				F54F46581E80B8D5004594AC /* FirstViewController.swift */,
 				F54F465A1E80B8E4004594AC /* SecondViewController.swift */,
@@ -257,7 +265,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = HHLM;
 				TargetAttributes = {
 					F58A28D31E72734A003A7728 = {
@@ -399,6 +407,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -448,6 +457,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
