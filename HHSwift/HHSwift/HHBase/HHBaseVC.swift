@@ -24,7 +24,9 @@ class HHBaseVC: UIViewController {
         view.backgroundColor = UIColor.cyan
         // Do any additional setup after loading the view.
         
-        self.navigationItem.title = NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
+        
+        
+       print( NSStringFromClass(type(of: self)).components(separatedBy: "."))
         
     }
 

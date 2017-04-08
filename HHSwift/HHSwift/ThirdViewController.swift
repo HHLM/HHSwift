@@ -24,6 +24,19 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         loginBtn.y = 100.0
         view.addSubview(loginBtn)
         print(switch_1.x)
+        
+        let rect = CGRect(x:0,y:400,width:kWidth,height:40)
+        let sv = scrollView(frame: rect, numberofLab: {
+            
+            return 10
+        }, labelOfIndex: {(index)-> UILabel in
+            let lab = UILabel()
+            lab.text = "heell\(index)"
+            lab.textColor = UIColor.red
+            lab.sizeToFit()
+            return lab
+        })
+        view.addSubview(sv)
     }
 
     fileprivate lazy var loginBtn:UIButton = {
@@ -105,4 +118,35 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         return true
     }
 
+    //标签个的个数由闭包来实现
+    /**
+     闭包的返回值：用来接收闭包执行的结果 继续后续的代码
+    */
+    func  scrollView(frame:CGRect,numberofLab:()->Int,labelOfIndex:( _ index:Int)-> UILabel) -> UIScrollView{
+        /**
+         *1.实例化scrollView
+         *2.知道标签数量
+            3.知道标签内容
+            4.返回scrollView
+         */
+        
+        let sv = UIScrollView(frame:frame)
+        sv.backgroundColor = UIColor.green
+        let count = numberofLab()
+        var margin = 0.0
+        print("标签数量\(count)")
+        for i in 0 ..< count {
+            let label = labelOfIndex(i)
+            label.x = CGFloat(margin)
+            sv.addSubview(label)
+            margin = Double(label.right)+20.0
+            label.y = sv.height/2 - label.height/2
+            print(NSStringFromCGRect(label.frame))
+            
+        }
+        sv.contentSize = CGSize(width:margin,height:0)
+        
+        return sv
+    }
+    
 }

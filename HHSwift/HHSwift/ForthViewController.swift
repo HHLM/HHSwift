@@ -60,7 +60,7 @@ class ForthViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
         DLog(indexPath.row)
         tableView.deselectRow(at: indexPath, animated: true)
         let vc =  dataArr[indexPath.row]
-        
+        vc.navigationItem.title = dataArray[indexPath.row]
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }

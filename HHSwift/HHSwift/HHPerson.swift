@@ -22,4 +22,9 @@ class HHPerson: NSObject {
         let keys = ["name","age"]
         return dictionaryWithValues(forKeys: keys).description
     }
+    
+    
+    func loadData (finish:() -> ()){
+        finish()
+    }
 }

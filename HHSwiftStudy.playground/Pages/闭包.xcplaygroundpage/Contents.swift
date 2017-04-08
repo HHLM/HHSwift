@@ -69,3 +69,16 @@ someFunctionThatTakesAClosure {
 someFunctionThatTakesAClosure { () -> Int in
  return 10
 }
+
+func sun(s1:String,s2:String) -> Int {
+    return 100
+}
+
+let hh = { (s2:String,s1:String) -> Int in
+    return 100
+    
+}
+
+let demo = {
+    print("没有参数没有返回值的闭包，可以省略所有的")
+}
