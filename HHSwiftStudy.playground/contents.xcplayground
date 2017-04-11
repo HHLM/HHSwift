@@ -19,5 +19,6 @@
         <page name='扩展'/>
         <page name='协议'/>
         <page name='高级运算符'/>
+        <page name='GCD'/>
     </pages>
 </playground>

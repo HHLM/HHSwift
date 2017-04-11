@@ -23,27 +23,27 @@ class cellModel: NSObject {
         
         let m1  = cellModel()
         m1.icon = "preson_adviser_call"
-        m1.title = "专属拿车顾问"
+        m1.title = "Push转场"
         sectionData1.append(m1)
         
         let m2  = cellModel()
         m2.icon = "history"
-        m2.title = "我的支付历史"
+        m2.title = "UITableView"
         sectionData1.append(m2)
         
         let m3  = cellModel()
-        m3.icon = "preson_wechat"
-        m3.title = "绑定微信"
+        m3.icon = "UICollectionView"
+        m3.title = "UICollectionView"
         sectionData1.append(m3)
         
         let m4  = cellModel()
-        m4.icon = "person_changeInfo"
-        m4.title = "修改资料"
+        m4.icon = "UIWebView"
+        m4.title = "UIWebView"
         sectionData2.append(m4)
         
         let m5  = cellModel()
         m5.icon = "person_changePwd"
-        m5.title = "修改账户密码"
+        m5.title = "UIScrollView"
         sectionData2.append(m5)
         
         let m6  = cellModel()

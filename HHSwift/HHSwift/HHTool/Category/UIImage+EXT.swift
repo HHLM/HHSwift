@@ -105,7 +105,7 @@ extension UIImage {
     
     func imageRotated(byDegrees:CGFloat) -> UIImage? {
         
-        return self.imageRotated(byDegrees:CGFloat(Double(byDegrees) * M_PI / 180))
+        return self.imageRotated(byDegrees:CGFloat(Double(byDegrees) * .pi / 180))
         
     }
 }

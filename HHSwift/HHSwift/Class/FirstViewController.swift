@@ -8,14 +8,26 @@
 
 import UIKit
 
+extension UserDefaults {
+    enum HHData:String,UserDefaultSettable {
+        case name,url,bool,int,float,double
+    }
+}
+
 class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{
 
     let model = cellModel()
     var array :Array<Any>  {
     
-      let  arr = model.dataArr()
+        let  arr = model.dataArray
+    
+        UserDefaults.HHData.name.store(value: "HHLM")
+        print(UserDefaults.HHData.name.storeString ?? "")
         return arr
     }
+    
+    
+    
     
     /*
      5种修饰符访问权限排序
@@ -87,8 +99,6 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
         cell.selectionStyle = .none
         let modes = array[indexPath.section] as! [cellModel]
@@ -101,9 +111,17 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let sec = SecondViewController()
-        sec.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(sec, animated: true)
+        if indexPath.row % 2 == 0 {
+            let sec = SecondViewController()
+            sec.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(sec, animated: true)
+        }else{
+            let vc = HHTableAnimationVC()
+            vc.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

@@ -7,29 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */; };
+		F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */; };
+		F50FA5481E9CDFC5009A2814 /* cellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5351E9CDFC5009A2814 /* cellModel.swift */; };
+		F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5361E9CDFC5009A2814 /* FirstViewController.swift */; };
+		F50FA54A1E9CDFC5009A2814 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5371E9CDFC5009A2814 /* ForthViewController.swift */; };
+		F50FA54B1E9CDFC5009A2814 /* HHAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */; };
+		F50FA54C1E9CDFC5009A2814 /* HHAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50FA5391E9CDFC5009A2814 /* HHAnimationCell.xib */; };
+		F50FA54D1E9CDFC5009A2814 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA53A1E9CDFC5009A2814 /* HHBaseVC.swift */; };
+		F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA53B1E9CDFC5009A2814 /* HHCell.swift */; };
+		F50FA54F1E9CDFC5009A2814 /* HHImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */; };
+		F50FA5501E9CDFC5009A2814 /* HHImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */; };
+		F50FA5511E9CDFC5009A2814 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */; };
+		F50FA5521E9CDFC5009A2814 /* HHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */; };
+		F50FA5531E9CDFC5009A2814 /* HHTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */; };
+		F50FA5541E9CDFC5009A2814 /* HHTableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */; };
+		F50FA5551E9CDFC5009A2814 /* HHTableImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */; };
+		F50FA5561E9CDFC5009A2814 /* HHTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5431E9CDFC5009A2814 /* HHTool.swift */; };
+		F50FA5571E9CDFC5009A2814 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50FA5441E9CDFC5009A2814 /* Info.plist */; };
+		F50FA5581E9CDFC5009A2814 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5451E9CDFC5009A2814 /* SecondViewController.swift */; };
+		F50FA5591E9CDFC5009A2814 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5461E9CDFC5009A2814 /* ThirdViewController.swift */; };
 		F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AAE1E8A453700E28892 /* HHBaseVC.swift */; };
 		F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */; };
 		F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */; };
 		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
-		F540230B1E82286C001A4140 /* HHPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230A1E82286C001A4140 /* HHPerson.swift */; };
-		F540230D1E8229D7001A4140 /* HHCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F540230C1E8229D7001A4140 /* HHCell.swift */; };
-		F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D51E83A307001A4140 /* HHAnimationCell.swift */; };
-		F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025D61E83A307001A4140 /* HHAnimationCell.xib */; };
-		F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */; };
-		F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */; };
-		F54025DE1E83D7B2001A4140 /* HHImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */; };
-		F54025E01E83DA4E001A4140 /* HHTableImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */; };
-		F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46561E80B75C004594AC /* HHTabBarVC.swift */; };
-		F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46581E80B8D5004594AC /* FirstViewController.swift */; };
-		F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F465A1E80B8E4004594AC /* SecondViewController.swift */; };
-		F54F465D1E80B8F1004594AC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F465C1E80B8F1004594AC /* ThirdViewController.swift */; };
-		F54F465F1E80B8FD004594AC /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F465E1E80B8FD004594AC /* ForthViewController.swift */; };
 		F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */; };
 		F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */; };
 		F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */; };
-		F54F46671E80D99B004594AC /* cellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46661E80D99B004594AC /* cellModel.swift */; };
 		F54F46691E81019C004594AC /* HHTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F46681E81019C004594AC /* HHTool.swift */; };
-		F58A28D81E72734A003A7728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58A28D71E72734A003A7728 /* AppDelegate.swift */; };
 		F58A28DD1E72734A003A7728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DB1E72734A003A7728 /* Main.storyboard */; };
 		F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DE1E72734A003A7728 /* Assets.xcassets */; };
 		F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */; };
@@ -42,7 +47,7 @@
 		F5AC1B8F1E962360002D9BF5 /* HHAnimation6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B8E1E962360002D9BF5 /* HHAnimation6.swift */; };
 		F5AC1B911E9623AD002D9BF5 /* HHAnimation7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B901E9623AD002D9BF5 /* HHAnimation7.swift */; };
 		F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */; };
-		F5E437A21E7FE63000AD0905 /* HHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E437A11E7FE63000AD0905 /* HHScrollView.swift */; };
+		F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,35 +61,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTTPRequest.swift; sourceTree = "<group>"; };
+		F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50FA5351E9CDFC5009A2814 /* cellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellModel.swift; sourceTree = "<group>"; };
+		F50FA5361E9CDFC5009A2814 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F50FA5371E9CDFC5009A2814 /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
+		F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationCell.swift; sourceTree = "<group>"; };
+		F50FA5391E9CDFC5009A2814 /* HHAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAnimationCell.xib; sourceTree = "<group>"; };
+		F50FA53A1E9CDFC5009A2814 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
+		F50FA53B1E9CDFC5009A2814 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
+		F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHImageViewCell.swift; sourceTree = "<group>"; };
+		F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHImageViewCell.xib; sourceTree = "<group>"; };
+		F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
+		F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHScrollView.swift; sourceTree = "<group>"; };
+		F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTabBarVC.swift; sourceTree = "<group>"; };
+		F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableAnimationVC.swift; sourceTree = "<group>"; };
+		F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableImageVC.swift; sourceTree = "<group>"; };
+		F50FA5431E9CDFC5009A2814 /* HHTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTool.swift; sourceTree = "<group>"; };
+		F50FA5441E9CDFC5009A2814 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50FA5451E9CDFC5009A2814 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F50FA5461E9CDFC5009A2814 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		F5146AAE1E8A453700E28892 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
 		F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
 		F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
-		F540230A1E82286C001A4140 /* HHPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHPerson.swift; sourceTree = "<group>"; };
-		F540230C1E8229D7001A4140 /* HHCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHCell.swift; sourceTree = "<group>"; };
 		F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		F54025D51E83A307001A4140 /* HHAnimationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationCell.swift; sourceTree = "<group>"; };
-		F54025D61E83A307001A4140 /* HHAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAnimationCell.xib; sourceTree = "<group>"; };
-		F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableAnimationVC.swift; sourceTree = "<group>"; };
-		F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHImageViewCell.swift; sourceTree = "<group>"; };
-		F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHImageViewCell.xib; sourceTree = "<group>"; };
-		F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTableImageVC.swift; sourceTree = "<group>"; };
-		F54F46561E80B75C004594AC /* HHTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTabBarVC.swift; sourceTree = "<group>"; };
-		F54F46581E80B8D5004594AC /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		F54F465A1E80B8E4004594AC /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		F54F465C1E80B8F1004594AC /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		F54F465E1E80B8FD004594AC /* ForthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_mine_selected.png; sourceTree = "<group>"; };
 		F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@2x.png"; sourceTree = "<group>"; };
 		F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@3x.png"; sourceTree = "<group>"; };
-		F54F46661E80D99B004594AC /* cellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellModel.swift; sourceTree = "<group>"; };
 		F54F46681E81019C004594AC /* HHTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HHTool.swift; path = HHSwift/HHTool.swift; sourceTree = SOURCE_ROOT; };
 		F58A28D41E72734A003A7728 /* HHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F58A28D71E72734A003A7728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F58A28DC1E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F58A28DE1E72734A003A7728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F58A28E11E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F58A28E31E72734A003A7728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58A28E81E72734A003A7728 /* HHSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HHSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A28EC1E72734A003A7728 /* HHSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHSwiftUITests.swift; sourceTree = "<group>"; };
 		F58A28EE1E72734A003A7728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +105,8 @@
 		F5AC1B8E1E962360002D9BF5 /* HHAnimation6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimation6.swift; sourceTree = "<group>"; };
 		F5AC1B901E9623AD002D9BF5 /* HHAnimation7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimation7.swift; sourceTree = "<group>"; };
 		F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimation8.swift; sourceTree = "<group>"; };
-		F5E437A11E7FE63000AD0905 /* HHScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHScrollView.swift; sourceTree = "<group>"; };
+		F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHUserDefaults.swift; sourceTree = "<group>"; };
+		F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserDefaults.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,32 @@
 			path = HHAnimations;
 			sourceTree = "<group>";
 		};
+		F50FA5331E9CDFC5009A2814 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */,
+				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
+				F50FA5361E9CDFC5009A2814 /* FirstViewController.swift */,
+				F50FA5371E9CDFC5009A2814 /* ForthViewController.swift */,
+				F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */,
+				F50FA5391E9CDFC5009A2814 /* HHAnimationCell.xib */,
+				F50FA53A1E9CDFC5009A2814 /* HHBaseVC.swift */,
+				F50FA53B1E9CDFC5009A2814 /* HHCell.swift */,
+				F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */,
+				F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */,
+				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
+				F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */,
+				F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */,
+				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
+				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
+				F50FA5431E9CDFC5009A2814 /* HHTool.swift */,
+				F50FA5441E9CDFC5009A2814 /* Info.plist */,
+				F50FA5451E9CDFC5009A2814 /* SecondViewController.swift */,
+				F50FA5461E9CDFC5009A2814 /* ThirdViewController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		F5146AAA1E8A44EA00E28892 /* HHVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				F54F46681E81019C004594AC /* HHTool.swift */,
+				F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */,
+				F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */,
+				F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */,
 				F5146AB01E8A457B00E28892 /* Category */,
 			);
 			path = HHTool;
@@ -207,29 +246,13 @@
 				F5146AAC1E8A44EA00E28892 /* HHBase */,
 				F5146AAD1E8A44EA00E28892 /* HHTool */,
 				F5179CED1E84F1F300F6289A /* Cell */,
-				F58A28D71E72734A003A7728 /* AppDelegate.swift */,
-				F54F46561E80B75C004594AC /* HHTabBarVC.swift */,
-				F54F46581E80B8D5004594AC /* FirstViewController.swift */,
-				F54F465A1E80B8E4004594AC /* SecondViewController.swift */,
-				F54F465C1E80B8F1004594AC /* ThirdViewController.swift */,
-				F54F465E1E80B8FD004594AC /* ForthViewController.swift */,
-				F54025D91E83A39C001A4140 /* HHTableAnimationVC.swift */,
-				F54025DF1E83DA4E001A4140 /* HHTableImageVC.swift */,
-				F5E437A11E7FE63000AD0905 /* HHScrollView.swift */,
-				F54F46661E80D99B004594AC /* cellModel.swift */,
-				F540230A1E82286C001A4140 /* HHPerson.swift */,
-				F540230C1E8229D7001A4140 /* HHCell.swift */,
-				F54025DB1E83D7B2001A4140 /* HHImageViewCell.swift */,
-				F54025DC1E83D7B2001A4140 /* HHImageViewCell.xib */,
-				F54025D51E83A307001A4140 /* HHAnimationCell.swift */,
-				F54025D61E83A307001A4140 /* HHAnimationCell.xib */,
-				F58A28DB1E72734A003A7728 /* Main.storyboard */,
+				F50FA5331E9CDFC5009A2814 /* Class */,
 				F58A28DE1E72734A003A7728 /* Assets.xcassets */,
+				F58A28DB1E72734A003A7728 /* Main.storyboard */,
 				F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */,
 				F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */,
 				F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */,
 				F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */,
-				F58A28E31E72734A003A7728 /* Info.plist */,
 				F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */,
 			);
 			path = HHSwift;
@@ -329,9 +352,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54025D81E83A307001A4140 /* HHAnimationCell.xib in Resources */,
+				F50FA54C1E9CDFC5009A2814 /* HHAnimationCell.xib in Resources */,
 				F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */,
-				F54025DE1E83D7B2001A4140 /* HHImageViewCell.xib in Resources */,
+				F50FA5571E9CDFC5009A2814 /* Info.plist in Resources */,
+				F50FA5501E9CDFC5009A2814 /* HHImageViewCell.xib in Resources */,
 				F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */,
 				F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */,
 				F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */,
@@ -354,33 +378,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50FA5591E9CDFC5009A2814 /* ThirdViewController.swift in Sources */,
+				F50FA5511E9CDFC5009A2814 /* HHPerson.swift in Sources */,
 				F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */,
-				F540230B1E82286C001A4140 /* HHPerson.swift in Sources */,
 				F5AC1B911E9623AD002D9BF5 /* HHAnimation7.swift in Sources */,
-				F54F465B1E80B8E4004594AC /* SecondViewController.swift in Sources */,
+				F50FA54A1E9CDFC5009A2814 /* ForthViewController.swift in Sources */,
+				F50FA54D1E9CDFC5009A2814 /* HHBaseVC.swift in Sources */,
 				F5AC1B8B1E962345002D9BF5 /* HHAnimation4.swift in Sources */,
+				F50FA5541E9CDFC5009A2814 /* HHTableAnimationVC.swift in Sources */,
 				F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */,
-				F54F46591E80B8D5004594AC /* FirstViewController.swift in Sources */,
-				F54025E01E83DA4E001A4140 /* HHTableImageVC.swift in Sources */,
+				F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */,
 				F5AC1B851E962309002D9BF5 /* HHAnimation1.swift in Sources */,
-				F54F46571E80B75C004594AC /* HHTabBarVC.swift in Sources */,
-				F54025DD1E83D7B2001A4140 /* HHImageViewCell.swift in Sources */,
 				F5AC1B8F1E962360002D9BF5 /* HHAnimation6.swift in Sources */,
 				F54F46691E81019C004594AC /* HHTool.swift in Sources */,
-				F54025D71E83A307001A4140 /* HHAnimationCell.swift in Sources */,
+				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
+				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
 				F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */,
 				F5AC1B891E962335002D9BF5 /* HHAnimation3.swift in Sources */,
-				F54F465D1E80B8F1004594AC /* ThirdViewController.swift in Sources */,
 				F5AC1B871E962328002D9BF5 /* HHAnimation2.swift in Sources */,
-				F540230D1E8229D7001A4140 /* HHCell.swift in Sources */,
-				F5E437A21E7FE63000AD0905 /* HHScrollView.swift in Sources */,
+				F50FA5531E9CDFC5009A2814 /* HHTabBarVC.swift in Sources */,
+				F50FA5581E9CDFC5009A2814 /* SecondViewController.swift in Sources */,
+				F50FA5521E9CDFC5009A2814 /* HHScrollView.swift in Sources */,
+				F50FA5551E9CDFC5009A2814 /* HHTableImageVC.swift in Sources */,
+				F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */,
 				F5AC1B8D1E962353002D9BF5 /* HHAnimation5.swift in Sources */,
+				F50FA5561E9CDFC5009A2814 /* HHTool.swift in Sources */,
 				F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */,
-				F54F46671E80D99B004594AC /* cellModel.swift in Sources */,
-				F54F465F1E80B8FD004594AC /* ForthViewController.swift in Sources */,
+				F50FA54B1E9CDFC5009A2814 /* HHAnimationCell.swift in Sources */,
+				F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */,
+				F50FA54F1E9CDFC5009A2814 /* HHImageViewCell.swift in Sources */,
+				F50FA5481E9CDFC5009A2814 /* cellModel.swift in Sources */,
 				F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */,
-				F54025DA1E83A39C001A4140 /* HHTableAnimationVC.swift in Sources */,
-				F58A28D81E72734A003A7728 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

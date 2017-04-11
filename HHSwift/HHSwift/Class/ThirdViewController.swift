@@ -27,7 +27,6 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         
         let rect = CGRect(x:0,y:400,width:kWidth,height:40)
         let sv = scrollView(frame: rect, numberofLab: {
-            
             return 10
         }, labelOfIndex: {(index)-> UILabel in
             let lab = UILabel()
