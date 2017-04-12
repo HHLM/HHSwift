@@ -49,83 +49,6 @@
             endingLineNumber = "63"
             landmarkName = "FirstViewController"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HHSwift.FirstViewController.(table in _7954249F162C46FB18631584EA9AF1EF).getter : __ObjC.UITableView"
-                  moduleName = "HHSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "513325142.720019"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HHSwift.FirstViewController.((table in _7954249F162C46FB18631584EA9AF1EF).getter : __ObjC.UITableView).(closure #1)"
-                  moduleName = "HHSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "513325142.726628"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HHSwift.FirstViewController.(table in _7954249F162C46FB18631584EA9AF1EF).setter : __ObjC.UITableView"
-                  moduleName = "HHSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "513325142.729688"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "65">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HHSwift.FirstViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; HHSwift.FirstViewController"
-                  moduleName = "HHSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "513325142.733186"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "124">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HHSwift.FirstViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;HHSwift.FirstViewController&gt;"
-                  moduleName = "HHSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/FirstViewController.swift"
-                  timestampString = "513325142.735112"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -237,6 +160,85 @@
             startingLineNumber = "140"
             endingLineNumber = "140"
             landmarkName = "scrollView(frame:numberofLab:labelOfIndex:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HHSwift/HHTool/HHTTPRequest.swift"
+            timestampString = "513656843.783461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "HHRequestTest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HHSwift.HHTTPRequest.HHRequestTest () -&gt; ()"
+                  moduleName = "HHSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
+                  timestampString = "513656856.394733"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1413">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HHSwift.HHTTPRequest.(HHRequestTest () -&gt; ()).(closure #2)"
+                  moduleName = "HHSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
+                  timestampString = "513656856.397642"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "701">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HHSwift.HHTTPRequest.(HHRequestTest () -&gt; ()).(closure #3)"
+                  moduleName = "HHSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
+                  timestampString = "513656856.400133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HHSwift/HHTool/HHTTPRequest.swift"
+            timestampString = "513656866.0662"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "HHRequestTest()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

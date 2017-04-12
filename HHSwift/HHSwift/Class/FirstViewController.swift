@@ -82,6 +82,7 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
 
         self.view.addSubview(self.table)
         print("nmae" + name)
+        HHTTPRequest().HHRequestTest()
     }
     
     
