@@ -27,6 +27,7 @@ img.backgroundColor = UIColor.red
 
 var x: Int
 
+
 x = 100
 
 x = 1000

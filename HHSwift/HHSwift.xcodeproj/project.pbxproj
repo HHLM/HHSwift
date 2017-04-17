@@ -47,6 +47,7 @@
 		F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */; };
 		F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */; };
 		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
+		F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */; };
 		F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */; };
 		F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */; };
 		F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */; };
@@ -134,6 +135,7 @@
 		F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
 		F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
+		F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHTTPRequest.swift; sourceTree = "<group>"; };
 		F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_mine_selected.png; sourceTree = "<group>"; };
 		F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@2x.png"; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */,
 				F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */,
 				F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */,
+				F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */,
 				F5146AB01E8A457B00E28892 /* Category */,
 			);
 			path = HHTool;
@@ -433,6 +436,7 @@
 		F58A28CC1E72734A003A7728 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HH;
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = HHLM;
@@ -525,6 +529,7 @@
 				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
 				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
 				F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */,
+				F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */,
 				F5AC1B891E962335002D9BF5 /* HHAnimation3.swift in Sources */,
 				F5AC1B871E962328002D9BF5 /* HHAnimation2.swift in Sources */,
 				F50FA58A1E9D0800009A2814 /* AFAutoPurgingImageCache.m in Sources */,
