@@ -17,6 +17,7 @@ extension UserDefaults {
 class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{
 
     let model = cellModel()
+    
     var array :Array<Any>  {
     
         let  arr = model.dataArray
@@ -76,11 +77,9 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.view.backgroundColor = .red
-        self.navigationItem.title = "第一页"
-
-        self.view.addSubview(self.table)
+        view.backgroundColor = .red
+        navigationItem.title = "第一页"
+        view.addSubview(self.table)
         print("nmae" + name)
         HHTTPRequest().HHRequestTest()
     }

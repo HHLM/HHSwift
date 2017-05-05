@@ -20,6 +20,7 @@ public func kView_with(view:UIView) -> CGFloat {
     return view.frame.size.width
 }
 
+
 public func kView_heigth(view:UIView) -> CGFloat {
     return view.frame.size.height
 }
@@ -65,7 +66,7 @@ public func DLog<T>(_ message:T,fileName:String = #file,method:String = #functio
  
 m/tyu890-= - returns: 返回RGB颜色
  */
-func kRGB(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
+ func kRGB(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
     
     return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }

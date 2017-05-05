@@ -45,12 +45,13 @@
 		F50FA5941E9D08CA009A2814 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50FA5931E9D08CA009A2814 /* Info.plist */; };
 		F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AAE1E8A453700E28892 /* HHBaseVC.swift */; };
 		F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */; };
-		F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */; };
+		F5146AB41E8A60EA00E28892 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5146AB31E8A60EA00E28892 /* UIView+Frame.swift */; };
 		F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5179CEE1E84F21400F6289A /* HPanCell.swift */; };
 		F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */; };
 		F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */; };
 		F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */; };
 		F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */; };
+		F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */; };
 		F58A28DD1E72734A003A7728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DB1E72734A003A7728 /* Main.storyboard */; };
 		F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DE1E72734A003A7728 /* Assets.xcassets */; };
 		F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */; };
@@ -64,6 +65,8 @@
 		F5AC1B911E9623AD002D9BF5 /* HHAnimation7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B901E9623AD002D9BF5 /* HHAnimation7.swift */; };
 		F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */; };
 		F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */; };
+		F5EE9A681EB1DC0E00AD0745 /* HHSAnimation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */; };
+		F5EE9A6A1EB1DFE800AD0745 /* HHAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,13 +136,14 @@
 		F50FA5931E9D08CA009A2814 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5146AAE1E8A453700E28892 /* HHBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHBaseVC.swift; sourceTree = "<group>"; };
 		F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+EXT.swift"; sourceTree = "<group>"; };
-		F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
+		F5146AB31E8A60EA00E28892 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		F5179CEE1E84F21400F6289A /* HPanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPanCell.swift; sourceTree = "<group>"; };
 		F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSHTTPRequest.swift; sourceTree = "<group>"; };
 		F54025CF1E83A2CB001A4140 /* HHSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HHSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_mine_selected.png; sourceTree = "<group>"; };
 		F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@2x.png"; sourceTree = "<group>"; };
 		F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@3x.png"; sourceTree = "<group>"; };
+		F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+EXT.swift"; sourceTree = "<group>"; };
 		F58A28D41E72734A003A7728 /* HHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A28DC1E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F58A28DE1E72734A003A7728 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 		F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimation8.swift; sourceTree = "<group>"; };
 		F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHUserDefaults.swift; sourceTree = "<group>"; };
 		F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserDefaults.h; sourceTree = "<group>"; };
+		F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHSAnimation1.swift; sourceTree = "<group>"; };
+		F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				F5AC1B841E962309002D9BF5 /* HHAnimation1.swift */,
+				F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */,
+				F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */,
 				F5AC1B861E962328002D9BF5 /* HHAnimation2.swift */,
 				F5AC1B881E962335002D9BF5 /* HHAnimation3.swift */,
 				F5AC1B8A1E962344002D9BF5 /* HHAnimation4.swift */,
@@ -336,7 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */,
-				F5146AB31E8A60EA00E28892 /* UIView+EXT.swift */,
+				F5146AB31E8A60EA00E28892 /* UIView+Frame.swift */,
+				F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 				F58A28D01E72734A003A7728 /* Sources */,
 				F58A28D11E72734A003A7728 /* Frameworks */,
 				F58A28D21E72734A003A7728 /* Resources */,
+				F5EE9A631EB0879700AD0745 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -500,6 +510,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F5EE9A631EB0879700AD0745 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${TAGS}\"\nfind \"${SRCROOT}\" \\( -name \"*.Swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F58A28D01E72734A003A7728 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -507,6 +533,7 @@
 			files = (
 				F50FA5911E9D0800009A2814 /* UIRefreshControl+AFNetworking.m in Sources */,
 				F50FA58C1E9D0800009A2814 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				F5EE9A681EB1DC0E00AD0745 /* HHSAnimation1.swift in Sources */,
 				F50FA5591E9CDFC5009A2814 /* ThirdViewController.swift in Sources */,
 				F50FA5511E9CDFC5009A2814 /* HHPerson.swift in Sources */,
 				F50FA5921E9D0800009A2814 /* UIWebView+AFNetworking.m in Sources */,
@@ -528,7 +555,7 @@
 				F50FA5851E9D0800009A2814 /* AFURLRequestSerialization.m in Sources */,
 				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
 				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
-				F5146AB41E8A60EA00E28892 /* UIView+EXT.swift in Sources */,
+				F5146AB41E8A60EA00E28892 /* UIView+Frame.swift in Sources */,
 				F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */,
 				F5AC1B891E962335002D9BF5 /* HHAnimation3.swift in Sources */,
 				F5AC1B871E962328002D9BF5 /* HHAnimation2.swift in Sources */,
@@ -539,8 +566,10 @@
 				F50FA5551E9CDFC5009A2814 /* HHTableImageVC.swift in Sources */,
 				F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */,
 				F50FA58F1E9D0800009A2814 /* UIImageView+AFNetworking.m in Sources */,
+				F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */,
 				F50FA5821E9D0800009A2814 /* AFHTTPSessionManager.m in Sources */,
 				F5AC1B8D1E962353002D9BF5 /* HHAnimation5.swift in Sources */,
+				F5EE9A6A1EB1DFE800AD0745 /* HHAnimationTransition.swift in Sources */,
 				F50FA5561E9CDFC5009A2814 /* HHTool.swift in Sources */,
 				F50FA5841E9D0800009A2814 /* AFSecurityPolicy.m in Sources */,
 				F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */,

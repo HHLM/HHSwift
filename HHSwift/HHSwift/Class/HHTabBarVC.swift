@@ -37,22 +37,32 @@ class HHTabBarVC: UITabBarController {
         let nav2 =  UINavigationController.init(rootViewController: second)
         nav2.tabBarItem = UITabBarItem.init(title: "一级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
         
+        
         let third = ThirdViewController()
-        let nav3 =  UINavigationController.init(rootViewController: third)
-        nav3.tabBarItem = UITabBarItem.init(title: "二级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
+        let nav3 =  UINavigationController(rootViewController: third)
+        nav3.tabBarItem = UITabBarItem(title: "二级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
         
         let forth = ForthViewController()
         let nav4 =  UINavigationController.init(rootViewController: forth)
         nav4.tabBarItem = UITabBarItem.init(title: "三级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
         
         let items = [nav1,nav2,nav3,nav4]
-        self.tabBar.backgroundColor = .red
-        self.viewControllers = items
-        self.tabBar.tintColor = UIColor.orange
+        viewControllers = items
+        tabBar.tintColor = UIColor.orange
+        tabBar.barTintColor = .white
+        tabBar.barStyle = .black
+        tabBar.isTranslucent = false
         
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.green,NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
         
-        
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.yellow,NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .selected)
     }
 
+    func addItem(titel:String ,imgae:String,viewController:UIViewController) {
+        viewController.tabBarItem = UITabBarItem.init(title: titel, image: UIImage(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), tag: 0)
+        viewController.tabBarItem.image = UIImage(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
+        viewController.tabBarItem.selectedImage = UIImage.init(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        addChildViewController(viewController)
+    }
 
 }

@@ -166,7 +166,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HHSwift/HHTool/HHTTPRequest.swift"
@@ -179,29 +179,29 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "HHSwift.HHTTPRequest.HHRequestTest () -&gt; ()"
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
-                  timestampString = "513656856.394733"
+                  timestampString = "514888376.721182"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
                   endingLineNumber = "34"
-                  offsetFromSymbolStart = "1413">
+                  offsetFromSymbolStart = "1227">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "HHSwift.HHTTPRequest.(HHRequestTest () -&gt; ()).(closure #2)"
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
-                  timestampString = "513656856.397642"
+                  timestampString = "514888376.723331"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -209,14 +209,14 @@
                   offsetFromSymbolStart = "701">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "HHSwift.HHTTPRequest.(HHRequestTest () -&gt; ()).(closure #3)"
                   moduleName = "HHSwift"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/LXH/%E5%B7%A5%E4%BD%9C%E9%A1%B9%E7%9B%AE/HHLM/HHSwift/HHSwift/HHSwift/HHTool/HHTTPRequest.swift"
-                  timestampString = "513656856.400133"
+                  timestampString = "514888376.726279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -224,22 +224,6 @@
                   offsetFromSymbolStart = "19">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HHSwift/HHTool/HHTTPRequest.swift"
-            timestampString = "513656866.0662"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "HHRequestTest()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
