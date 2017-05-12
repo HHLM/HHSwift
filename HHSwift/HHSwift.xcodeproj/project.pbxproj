@@ -65,6 +65,7 @@
 		F5AC1B911E9623AD002D9BF5 /* HHAnimation7.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B901E9623AD002D9BF5 /* HHAnimation7.swift */; };
 		F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */; };
 		F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */; };
+		F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B588891EC3F935004CE707 /* UIButton+EXT.swift */; };
 		F5EE9A681EB1DC0E00AD0745 /* HHSAnimation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */; };
 		F5EE9A6A1EB1DFE800AD0745 /* HHAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */; };
 /* End PBXBuildFile section */
@@ -161,6 +162,7 @@
 		F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimation8.swift; sourceTree = "<group>"; };
 		F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHUserDefaults.swift; sourceTree = "<group>"; };
 		F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserDefaults.h; sourceTree = "<group>"; };
+		F5B588891EC3F935004CE707 /* UIButton+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+EXT.swift"; sourceTree = "<group>"; };
 		F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHSAnimation1.swift; sourceTree = "<group>"; };
 		F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -346,6 +348,7 @@
 				F5146AB11E8A45E800E28892 /* UIImage+EXT.swift */,
 				F5146AB31E8A60EA00E28892 /* UIView+Frame.swift */,
 				F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */,
+				F5B588891EC3F935004CE707 /* UIButton+EXT.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				F5AC1B8F1E962360002D9BF5 /* HHAnimation6.swift in Sources */,
 				F50FA5851E9D0800009A2814 /* AFURLRequestSerialization.m in Sources */,
 				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
+				F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */,
 				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
 				F5146AB41E8A60EA00E28892 /* UIView+Frame.swift in Sources */,
 				F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */,

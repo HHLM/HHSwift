@@ -8,10 +8,15 @@
 
 import UIKit
 
+let viewLineHeight : CGFloat = 1.0
 class HHSAnimation1: HHBaseVC {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+       
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +26,13 @@ class HHSAnimation1: HHBaseVC {
         // Dispose of any resources that can be recreated.
     }
     
+    private lazy var viewLine: UIView = {
+        let view = UIView()
+        
+        view.frame = CGRect(x: 0, y: self.view.frame.size.height - viewLineHeight, width: self.view.frame.size.width, height: viewLineHeight)
+        
+        return view
+    }()
 
     /*
     // MARK: - Navigation
