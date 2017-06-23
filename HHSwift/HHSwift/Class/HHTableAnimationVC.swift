@@ -38,6 +38,7 @@ class HHTableAnimationVC: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:HHAnimationCell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HHAnimationCell
+        cell.HHH()
         
         if dict[String(indexPath.row)] == "0" {
             

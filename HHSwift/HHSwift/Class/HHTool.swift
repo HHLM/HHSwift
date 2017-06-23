@@ -116,7 +116,6 @@ func kBundleDocumentPath() -> String! {
 }
 
 
-
 /**
  - author: 1606
  - date: 17-03-21 14:03:12
@@ -124,6 +123,40 @@ func kBundleDocumentPath() -> String! {
  */
 func kCachesPath() -> String! {
     return NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first
+}
+
+/**
+ 创建文件
+ - author: 1606
+ - date: 17-05-16 11:05:00
+ - parameter filePath: 文件地址
+ - parameter fileType: 文件类型
+ */
+func kCreatfile(filePath:String,fileType:String) {
+    
+    let plistPath = filePath + fileType;
+    let fileManager = FileManager()
+    fileManager.createFile(atPath: plistPath, contents: nil, attributes: nil)
+}
+
+/**
+ 读取文件内容
+ 
+ - author: 1606
+ - date: 17-05-17 10:05:29
+ 
+ - parameter filePath: 地址
+ 
+ - returns: 文件内容
+ */
+func kReadArrayFilePath(filePath:String) -> Array<Any> {
+    let aa = NSArray.init(contentsOfFile: filePath)
+    return aa as! Array<Any>
+}
+
+func kReadDictionaryFilePath(filePath:String) -> NSDictionary {
+    let dic = NSDictionary.init(contentsOfFile: filePath)
+    return dic!
 }
 
 class HHTool: NSObject {

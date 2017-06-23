@@ -82,6 +82,7 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         view.addSubview(self.table)
         print("nmae" + name)
         HHTTPRequest().HHRequestTest()
+        
     }
     
     
@@ -104,6 +105,7 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         let modes = array[indexPath.section] as! [cellModel]
         let cmodel = modes[indexPath.row]
         cell.textLabel?.text = cmodel.title
+        
         
         return cell
     }

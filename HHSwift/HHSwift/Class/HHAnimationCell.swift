@@ -15,6 +15,7 @@ class HHAnimationCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.selectionStyle = .none
+        self.textLabel?.font = UIFont.systemFont(ofSize: 14)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,4 +24,7 @@ class HHAnimationCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func HHH() {
+        print("KKKKK")
+    }
 }
