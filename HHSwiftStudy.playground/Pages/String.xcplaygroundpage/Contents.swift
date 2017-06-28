@@ -4,14 +4,17 @@ import Foundation
 
 var str = "Hello, playground"
 
-//: [Next](@next)
+//: 便利字符串的字符
 
 for s in str.characters {
     print(s)
 }
 
-//字符串长度
+let l = str.lengthOfBytes(using: String.Encoding.utf8)
+let ll = str.characters.count
+let lll = str.utf8.count
 
+//字符串长度
 let len = str.lengthOfBytes(using: String.Encoding.utf8)
 print(len)
 
@@ -36,6 +39,9 @@ let m = 23
 let s = 9
 let stringTime = String(format: "%02d:%02d:%02d", arguments: [h, m, s])
 
+let sss = String(format: "----%02d:%02d", arguments: [h,m])
+print(sss)
+
 let ssss = "\(h):\(m):\(s)"
 print(ssss)
 let sssss = String(format: "%02d",arguments:[h])
@@ -46,6 +52,7 @@ let helloString = "大神带你飞"
 
 let aaa = (helloString as NSString).substring(with: NSRange(location: 0,length: 3))
 
+let bb = (helloString as NSString).substring(with: NSRange.init(location: 0, length: 2))
 print(aaa)
 
 let  starIndex = helloString.startIndex;
