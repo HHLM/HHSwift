@@ -22,6 +22,9 @@ let img = UIImageView.init(frame:  CGRect(x:0,y:0,width:100,height:40))
 let view = UIView.init(frame: CGRect(x:0,y:0,width:100,height:100))
 view.backgroundColor = UIColor.red
 
+
+
+
 var image = UIImage.init(named: "1.jpeg")
 
 img.image = image;
@@ -104,6 +107,13 @@ if i == 1 {
 }
 
 
+
+var sum = 0
+
+for  i in 0 ..< 9 {
+    sum+=i
+}
+
 //元组 一个Int 和一个String组合起来表示HTTP状态码的两种不同的值
 //不需要的数据可以用夏下划线（ _ ）表示
 let https404Error = (statusCpode: 404,descripe: "Not Found",true)
@@ -116,6 +126,7 @@ let (jusetTheStatusCode,_,_) = https404Error
 print(https404Error.statusCpode)
 print(https404Error.descripe)
 //print(https404Error.2)
+
 
 
 print(httpcode.2)

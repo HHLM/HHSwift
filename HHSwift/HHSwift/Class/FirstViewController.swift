@@ -79,9 +79,24 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         
         view.backgroundColor = .red
         navigationItem.title = "第一页"
+        //大标题栏目
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
+        
         view.addSubview(self.table)
         print("nmae" + name)
         HHTTPRequest().HHRequestTest()
+        
+        let v = UIView()
+        v.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        v.backgroundColor = #colorLiteral(red: 0.1764705882, green: 0.7254901961, blue: 0.4117647059, alpha: 1)
+        
+        let iv = UIImageView(image: #imageLiteral(resourceName: "ic_main_mine_selected.png"))
+        iv.center = view.center
+        v.center = view.center;
+        view.addSubview(v)
+        view.addSubview(iv)
+        
         
     }
     
@@ -112,7 +127,11 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = HHDemo()
         
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+        return
         if indexPath.row % 2 == 0 {
             let sec = SecondViewController()
             sec.hidesBottomBarWhenPushed = true

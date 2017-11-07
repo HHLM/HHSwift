@@ -10,6 +10,8 @@ import ImageIO
 import UIKit
 import Foundation
 
+//MARK:扩展
+
 extension UIImage {
 
     /*
@@ -44,9 +46,10 @@ extension UIImage {
     // MARK:-给图片着色
     
     func tintedImage(color:UIColor,rect:CGRect,alpha:CGFloat) -> UIImage? {
-    
-        let imageRect = CGRect.init(x: 0, y: 0, width: self.size.width, height: self.size.height)
         
+        //TODO:xxx
+        let imageRect = CGRect.init(x: 0, y: 0, width: self.size.width, height: self.size.height)
+        //FIXME:修改我
         UIGraphicsBeginImageContextWithOptions(self.size, true, self.scale)
         let ctx = UIGraphicsGetCurrentContext()
         self.draw(in: imageRect)

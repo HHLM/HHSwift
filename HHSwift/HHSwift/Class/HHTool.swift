@@ -39,7 +39,11 @@ public func HHClassFromString(_ className:String) -> Swift.AnyClass? {
     return NSClassFromString("\(bundleName).\(className)")
 }
 
+
+
 // MARK: - 打印信息
+//FIXME:修改我
+//TODO:单调
 public func DLog<T>(_ message:T,fileName:String = #file,method:String = #function,line:Int = #line) {
 
     #if DEBUG

@@ -2,7 +2,7 @@
 
 import Foundation
 
-var str = "Hello, playground"
+var str = "Hello, playground 你好"
 
 //: 便利字符串的字符
 
@@ -14,17 +14,26 @@ let l = str.lengthOfBytes(using: String.Encoding.utf8)
 let ll = str.characters.count
 let lll = str.utf8.count
 
+
+let ocStr = (str as NSString)
+print(String(ocStr.length))
+
+
 //字符串长度
 let len = str.lengthOfBytes(using: String.Encoding.utf8)
+// UTF8 中一个汉字 三个字节
+str.lengthOfBytes(using: .utf8)
 print(len)
 
 let len1 = str.characters.count
+
+// 字符串拼接
+
 
 print(len1)
 
 let len2  = str.utf8.count;
 print(len2)
-
 
 let st1 = "HH"
 let st2 = "LM"

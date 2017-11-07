@@ -51,6 +51,7 @@
 		F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */; };
 		F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */; };
 		F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */; };
+		F5506F8D1FAC3DA100BF9175 /* HHDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5506F8C1FAC3DA100BF9175 /* HHDemo.swift */; };
 		F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */; };
 		F58A28DD1E72734A003A7728 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DB1E72734A003A7728 /* Main.storyboard */; };
 		F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58A28DE1E72734A003A7728 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		F5AC1B931E962441002D9BF5 /* HHAnimation8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AC1B921E962441002D9BF5 /* HHAnimation8.swift */; };
 		F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */; };
 		F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B588891EC3F935004CE707 /* UIButton+EXT.swift */; };
+		F5C980FB1FADB55B008EAAC9 /* HHUIDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C980FA1FADB55B008EAAC9 /* HHUIDemoVC.swift */; };
 		F5EE9A681EB1DC0E00AD0745 /* HHSAnimation1.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */; };
 		F5EE9A6A1EB1DFE800AD0745 /* HHAnimationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */; };
 /* End PBXBuildFile section */
@@ -144,6 +146,7 @@
 		F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_mine_selected.png; sourceTree = "<group>"; };
 		F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@2x.png"; sourceTree = "<group>"; };
 		F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_main_mine_selected@3x.png"; sourceTree = "<group>"; };
+		F5506F8C1FAC3DA100BF9175 /* HHDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHDemo.swift; sourceTree = "<group>"; };
 		F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+EXT.swift"; sourceTree = "<group>"; };
 		F58A28D41E72734A003A7728 /* HHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58A28DC1E72734A003A7728 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 		F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHUserDefaults.swift; sourceTree = "<group>"; };
 		F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHUserDefaults.h; sourceTree = "<group>"; };
 		F5B588891EC3F935004CE707 /* UIButton+EXT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+EXT.swift"; sourceTree = "<group>"; };
+		F5C980FA1FADB55B008EAAC9 /* HHUIDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHUIDemoVC.swift; sourceTree = "<group>"; };
 		F5EE9A671EB1DC0E00AD0745 /* HHSAnimation1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHSAnimation1.swift; sourceTree = "<group>"; };
 		F5EE9A691EB1DFE800AD0745 /* HHAnimationTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAnimationTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,6 +315,8 @@
 		F5146AAA1E8A44EA00E28892 /* HHVC */ = {
 			isa = PBXGroup;
 			children = (
+				F5506F8C1FAC3DA100BF9175 /* HHDemo.swift */,
+				F5C980FA1FADB55B008EAAC9 /* HHUIDemoVC.swift */,
 			);
 			path = HHVC;
 			sourceTree = "<group>";
@@ -557,6 +563,7 @@
 				F5AC1B8F1E962360002D9BF5 /* HHAnimation6.swift in Sources */,
 				F50FA5851E9D0800009A2814 /* AFURLRequestSerialization.m in Sources */,
 				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
+				F5506F8D1FAC3DA100BF9175 /* HHDemo.swift in Sources */,
 				F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */,
 				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
 				F5146AB41E8A60EA00E28892 /* UIView+Frame.swift in Sources */,
@@ -568,6 +575,7 @@
 				F50FA5581E9CDFC5009A2814 /* SecondViewController.swift in Sources */,
 				F50FA5521E9CDFC5009A2814 /* HHScrollView.swift in Sources */,
 				F50FA5551E9CDFC5009A2814 /* HHTableImageVC.swift in Sources */,
+				F5C980FB1FADB55B008EAAC9 /* HHUIDemoVC.swift in Sources */,
 				F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */,
 				F50FA58F1E9D0800009A2814 /* UIImageView+AFNetworking.m in Sources */,
 				F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */,
@@ -725,6 +733,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YM2MZ34492;
 				INFOPLIST_FILE = HHSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -741,6 +750,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = YM2MZ34492;
 				INFOPLIST_FILE = HHSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";

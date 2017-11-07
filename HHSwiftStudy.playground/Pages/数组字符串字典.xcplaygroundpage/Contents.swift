@@ -11,7 +11,7 @@ dict.updateValue("11", forKey: "11")
 dict.removeValue(forKey: "11")
 print(dict)
 var dic = [1:1]
-
+ 
 dic.updateValue(1, forKey: 2)
 print(dic)
 

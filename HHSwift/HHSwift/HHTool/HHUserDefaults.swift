@@ -20,6 +20,7 @@ public protocol UserDefaultSettable {
 }
 
 
+
 public extension UserDefaultSettable where Self:RawRepresentable,Self.RawValue == String {
 
     public func store(value: Any?) {
