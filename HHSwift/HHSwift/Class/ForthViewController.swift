@@ -27,11 +27,18 @@ class ForthViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
         view.addSubview(table)
     }
     func  config()  {
-        let arr = ["转场动画","启动动画","加载动画","模态动画","Push动画","Aribnb动画","类似Twitter多张图"]
+        
+        let arr = ["转场动画","启动动画",
+                   "加载动画","模态动画",
+                   "Push动画","Aribnb动画",
+                   "类似Twitter多张图"]
+        
         dataArray += arr
+        
         let vcs = [HHAnimation1(),HHAnimation2(),HHAnimation3(),
                    HHAnimation4(),HHAnimation5(),HHAnimation6(),
                    HHAnimation7()]
+        
         dataArr += vcs
     }
 

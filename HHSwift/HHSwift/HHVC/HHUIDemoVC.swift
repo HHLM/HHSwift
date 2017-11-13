@@ -10,6 +10,8 @@ import UIKit
 
 class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
     
+    //定义一个闭包
+    var hh_finishedCallback: ((_ name: String) -> ())?
     
     //MARK: -- 懒加载UITableView
     
@@ -43,6 +45,8 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let a = HHAddDemoVC()
+        navigationController?.pushViewController(a, animated: true)
         print(indexPath.row)
     }
     
@@ -59,6 +63,7 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         view.addSubview(tab)
 //        print(tab.visibleCells)
+        
 
         hh_block()
         hh_GCD()
@@ -109,9 +114,9 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
             print("耗时操作\(Thread.current)")
             Thread.sleep(forTimeInterval: 1.0) //休眠一秒
 //            let json = ["太极","武当","少林"]
-            DispatchQueue.main.async(execute: {
+            DispatchQueue.main.async {
                 print("主线程操作\(Thread.current)")
-            })
+            }
         }
     }
 
@@ -125,8 +130,16 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
                 complate(json)
             })
         }
+        //若函数的
+        //尾随闭包
+        hh_loadData(finished: {(name)->() in
+            
+        })
        
-        
+        //这是尾随闭包 省去了（）
+        hh_loadData { (name) in
+            
+        }
     }
  
     //闭包获取数据
@@ -142,10 +155,43 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
     }
     
     func hh_func2(finished: @escaping (_ name : String) -> ()) -> () {
-        let sum = hh_func
+        _ = hh_func
         
+        //闭包中和self中相互引用 就造成循环引用
+        //Swift中解决闭包循环引用的三种方法
+        //MARK: 1、类似于OC中的 __weak
+        weak var weakself = self
+        hh_circlyLoad {
+            print(weakself?.view as Any)
+        }
+        
+        // MARK: 2、推荐使用这种 和OC中的__weak typeof(self) 作用类似 对象被回收时 指针会自动指向nil
+        hh_circlyLoad { [weak self] in
+            print(self?.view as Any)
+        }
+        // MARK: 3、会造成野指针 类似于OC中的__unsafe__retained 对象被收回 指针不会指向nil
+        hh_circlyLoad { [unowned self] in
+            print(self.view)
+        }
     }
-   
+    //MARK: -- 循环引用
     
+    func hh_circlyLoad(complate: ()->()) -> () {
+        DispatchQueue.global().async {
+            DispatchQueue.main.async(execute: {
+                
+            })
+        }
+    }
+    
+    
+    deinit {
+        //类似于OC的dealloc
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let a = HHAddDemoVC()
+        navigationController?.pushViewController(a, animated: true)
+    }
 
 }
