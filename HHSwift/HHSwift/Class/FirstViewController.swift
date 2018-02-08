@@ -127,11 +127,11 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = HHDemo()
-        
-        vc.hidesBottomBarWhenPushed = true
-        navigationController?.pushViewController(vc, animated: true)
-        return
+//        let vc = HHDemo()
+//        
+//        vc.hidesBottomBarWhenPushed = true
+//        navigationController?.pushViewController(vc, animated: true)
+//        return
         if indexPath.row % 2 == 0 {
             let sec = SecondViewController()
             sec.hidesBottomBarWhenPushed = true
