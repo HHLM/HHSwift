@@ -25,7 +25,7 @@ class HHDemo: HHBaseVC {
     
     override func viewDidLoad() {
     
-        view.backgroundColor = #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
       /**
          1、条件不需要（）
          2、语句必须有{}

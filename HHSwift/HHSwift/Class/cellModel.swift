@@ -92,7 +92,8 @@ class cellModel: NSObject {
         m5.icon = "person_changePwd"
         m5.title = "修改账户密码"
         sectionData2.append(m5)
-        
+
+
         let m6  = cellModel()
         m6.icon = "person_more"
         m6.title = "更多"

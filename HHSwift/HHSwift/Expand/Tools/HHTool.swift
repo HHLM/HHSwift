@@ -81,6 +81,9 @@ func kColorRandom() ->UIColor {
     return kRGB(r: CGFloat(arc4random()%255), g: CGFloat(arc4random()%255), b: CGFloat(arc4random()%255), a: 1)
 }
 
+func kRedColo() -> UIColor {
+    return #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+}
 
 // MARK: -路径
 /**
@@ -153,6 +156,7 @@ func kCreatfile(filePath:String,fileType:String) {
  
  - returns: 文件内容
  */
+
 func kReadArrayFilePath(filePath:String) -> Array<Any> {
     let aa = NSArray.init(contentsOfFile: filePath)
     return aa as! Array<Any>

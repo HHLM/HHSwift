@@ -151,9 +151,7 @@ class HPanCell: UITableViewCell {
         let translation = pan.translation(in: self)
         if(fabs(translation.y) > fabs(translation.x))
         {
-            
             return false
-            
         }
         return true
         

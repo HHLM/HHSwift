@@ -14,20 +14,25 @@ class HHBaseVC: UIViewController {
         
         super.viewDidLoad()
 
-        let navBgImage = UIImage.imageWithColor(color: UIColor.cyan, size: CGSize.init(width: kWidth, height: 64))
-//        let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.green, rect: CGRect.init(x: 0, y: 16, width: kWidth, height: 32), alpha: 0.5)
         
-        navigationController?.navigationBar.setBackgroundImage(navBgImage, for: UIBarMetrics.default)
+        let navBgImage = UIImage.imageWithColor(color: UIColor.purple, size: CGSize.init(width: kWidth, height: 64))
         
-        //这句代码是去掉导航条的那根黑线
-        navigationController?.navigationBar.shadowImage = UIImage()
+        let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.purple, rect: CGRect.init(x: 0, y: 16, width: kWidth, height: 32), alpha: 0.5)
+        navigationController?.navigationBar.setBackgroundImage(navBgImage1, for: UIBarMetrics.default)
         
         view.backgroundColor = UIColor.cyan
         
+        hh_hiddenNavBarBottomLine()
         
-       print( NSStringFromClass(type(of: self)).components(separatedBy: "."))
-        
+        print( NSStringFromClass(type(of: self)).components(separatedBy: "."))
     }
+    
+    /// 隐藏导航那根线
+    func hh_hiddenNavBarBottomLine() {
+        //这句代码是去掉导航条的那根黑线
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
 
 
 }

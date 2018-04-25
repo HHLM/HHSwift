@@ -48,14 +48,14 @@ class HHTabBarVC: UITabBarController {
         
         let items = [nav1,nav2,nav3,nav4]
         viewControllers = items
-        tabBar.tintColor = UIColor.orange
-        tabBar.barTintColor = .white
-        tabBar.barStyle = .black
+        tabBar.tintColor = kColorRandom()
+        tabBar.barTintColor = kColorRandom()
+        tabBar.barStyle = .default
         tabBar.isTranslucent = false
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.green,NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black,NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.yellow,NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : kColorRandom(),NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .selected)
     }
 
     func addItem(titel:String ,imgae:String,viewController:UIViewController) {

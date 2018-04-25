@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA6208DE377001A61A2 /* Second.storyboard */; };
+		0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA9208DE411001A61A2 /* Third.storyboard */; };
+		0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABAC208DE47D001A61A2 /* Fourth.storyboard */; };
 		04FF1BF02084AC11004E294A /* Picture.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF1BEF2084AC11004E294A /* Picture.xcassets */; };
 		04FF1BF22084AC7D004E294A /* HHBaseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF1BF12084AC7D004E294A /* HHBaseMode.swift */; };
 		F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */; };
@@ -86,6 +89,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0462ABA7208DE377001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
+		0462ABAA208DE411001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Third.storyboard; sourceTree = "<group>"; };
+		0462ABAD208DE47D001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Fourth.storyboard; sourceTree = "<group>"; };
 		04FF1BEF2084AC11004E294A /* Picture.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Picture.xcassets; sourceTree = "<group>"; };
 		04FF1BF12084AC7D004E294A /* HHBaseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseMode.swift; sourceTree = "<group>"; };
 		F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTTPRequest.swift; sourceTree = "<group>"; };
@@ -195,10 +201,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04FF1BEB2084ABEB004E294A /* First */ = {
+		0462AB0D208D7AF9001A61A2 /* Control */ = {
 			isa = PBXGroup;
 			children = (
 				F50FA5361E9CDFC5009A2814 /* FirstViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0462AB0E208D7AF9001A61A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0462AB0F208D7AF9001A61A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5179CEE1E84F21400F6289A /* HPanCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0462AB10208D7B06001A61A2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0462AB11208D7B10001A61A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0462AB12208D7B10001A61A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0462AB13208D7C26001A61A2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0462AB14208D7C26001A61A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0462AB15208D7C26001A61A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0462AB16208D7C36001A61A2 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				F50FA5461E9CDFC5009A2814 /* ThirdViewController.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		0462AB17208D7C36001A61A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0462AB18208D7C36001A61A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0462ABAF208DE9C5001A61A2 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F50FA5431E9CDFC5009A2814 /* HHTool.swift */,
+				F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */,
+				F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		0462ABB0208DE9C5001A61A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */,
+				F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		04FF1BEB2084ABEB004E294A /* First */ = {
+			isa = PBXGroup;
+			children = (
+				0462AB0D208D7AF9001A61A2 /* Control */,
+				0462AB0E208D7AF9001A61A2 /* Model */,
+				0462AB0F208D7AF9001A61A2 /* View */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -206,6 +320,9 @@
 		04FF1BEC2084ABEB004E294A /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
+				0462AB11208D7B10001A61A2 /* Model */,
+				0462AB12208D7B10001A61A2 /* View */,
+				0462AB10208D7B06001A61A2 /* Control */,
 				F50FA5371E9CDFC5009A2814 /* ForthViewController.swift */,
 			);
 			path = Fourth;
@@ -214,7 +331,9 @@
 		04FF1BED2084ABEB004E294A /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				F50FA5461E9CDFC5009A2814 /* ThirdViewController.swift */,
+				0462AB16208D7C36001A61A2 /* Control */,
+				0462AB17208D7C36001A61A2 /* Model */,
+				0462AB18208D7C36001A61A2 /* View */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -222,6 +341,9 @@
 		04FF1BEE2084ABEB004E294A /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				0462AB13208D7C26001A61A2 /* Control */,
+				0462AB14208D7C26001A61A2 /* Model */,
+				0462AB15208D7C26001A61A2 /* View */,
 				F50FA5451E9CDFC5009A2814 /* SecondViewController.swift */,
 			);
 			path = Second;
@@ -263,7 +385,6 @@
 				F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */,
 				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
 				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
-				F50FA5431E9CDFC5009A2814 /* HHTool.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -278,6 +399,9 @@
 				F50FA5931E9D08CA009A2814 /* Info.plist */,
 				F58A28DB1E72734A003A7728 /* Main.storyboard */,
 				F58A28E01E72734A003A7728 /* LaunchScreen.storyboard */,
+				0462ABA6208DE377001A61A2 /* Second.storyboard */,
+				0462ABA9208DE411001A61A2 /* Third.storyboard */,
+				0462ABAC208DE47D001A61A2 /* Fourth.storyboard */,
 				F54F46601E80C6D6004594AC /* ic_main_mine_selected.png */,
 				F54F46611E80C6D6004594AC /* ic_main_mine_selected@2x.png */,
 				F54F46621E80C6D6004594AC /* ic_main_mine_selected@3x.png */,
@@ -290,8 +414,7 @@
 			children = (
 				F50FA55C1E9D0800009A2814 /* AFNetworking */,
 			);
-			name = Vender;
-			path = HHSwift/Vender;
+			path = Vender;
 			sourceTree = "<group>";
 		};
 		F50FA55C1E9D0800009A2814 /* AFNetworking */ = {
@@ -381,10 +504,8 @@
 		F5146AAD1E8A44EA00E28892 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
-				F5B0F09E1E9C772F0056E2C1 /* HHUserDefaults.swift */,
-				F5B0F0A01E9C77480056E2C1 /* HHUserDefaults.h */,
-				F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */,
-				F53214321EA4575D0095B7BA /* HSHTTPRequest.swift */,
+				0462ABAF208DE9C5001A61A2 /* Tools */,
+				0462ABB0208DE9C5001A61A2 /* Network */,
 				F5146AB01E8A457B00E28892 /* Category */,
 			);
 			path = Expand;
@@ -401,19 +522,10 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
-		F5179CED1E84F1F300F6289A /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				F5179CEE1E84F21400F6289A /* HPanCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		F58A28CB1E72734A003A7728 = {
 			isa = PBXGroup;
 			children = (
 				F58A28D61E72734A003A7728 /* HHSwift */,
-				F50FA55B1E9D07F2009A2814 /* Vender */,
 				F58A28EB1E72734A003A7728 /* HHSwiftUITests */,
 				F58A28D51E72734A003A7728 /* Products */,
 			);
@@ -431,11 +543,11 @@
 		F58A28D61E72734A003A7728 /* HHSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F50FA55B1E9D07F2009A2814 /* Vender */,
 				F5098D8A1E8E0085008D468C /* HHAnimations */,
 				F5146AAA1E8A44EA00E28892 /* HHVC */,
 				F5146AAB1E8A44EA00E28892 /* HHView */,
 				F5146AAD1E8A44EA00E28892 /* Expand */,
-				F5179CED1E84F1F300F6289A /* Cell */,
 				F50FA5331E9CDFC5009A2814 /* Class */,
 				F50FA55A1E9D04D2009A2814 /* Other */,
 			);
@@ -538,14 +650,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */,
 				F50FA54C1E9CDFC5009A2814 /* HHAnimationCell.xib in Resources */,
 				F54F46631E80C6D6004594AC /* ic_main_mine_selected.png in Resources */,
 				F50FA5501E9CDFC5009A2814 /* HHImageViewCell.xib in Resources */,
 				F50FA5881E9D0800009A2814 /* LICENSE in Resources */,
 				F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */,
 				F54F46651E80C6D6004594AC /* ic_main_mine_selected@3x.png in Resources */,
+				0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */,
 				F54F46641E80C6D6004594AC /* ic_main_mine_selected@2x.png in Resources */,
 				F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */,
+				0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */,
 				F50FA5941E9D08CA009A2814 /* Info.plist in Resources */,
 				04FF1BF02084AC11004E294A /* Picture.xcassets in Resources */,
 				F58A28DD1E72734A003A7728 /* Main.storyboard in Resources */,
@@ -658,6 +773,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0462ABA6208DE377001A61A2 /* Second.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0462ABA7208DE377001A61A2 /* Base */,
+			);
+			name = Second.storyboard;
+			sourceTree = "<group>";
+		};
+		0462ABA9208DE411001A61A2 /* Third.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0462ABAA208DE411001A61A2 /* Base */,
+			);
+			name = Third.storyboard;
+			sourceTree = "<group>";
+		};
+		0462ABAC208DE47D001A61A2 /* Fourth.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0462ABAD208DE47D001A61A2 /* Base */,
+			);
+			name = Fourth.storyboard;
+			sourceTree = "<group>";
+		};
 		F58A28DB1E72734A003A7728 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
