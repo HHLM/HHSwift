@@ -18,6 +18,9 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
 
     let model = cellModel()
     
+    
+    
+    
     var array :Array<Any>  {
     
         let  arr = model.dataArray
@@ -77,11 +80,15 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let name = "ssss"
+        name.length()
+        
+        
         view.backgroundColor = .red
         navigationItem.title = "第一页"
         //大标题栏目
         navigationController?.navigationBar.prefersLargeTitles = false
-        
         
         view.addSubview(self.table)
         print("nmae" + name)
@@ -142,6 +149,9 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         let navBgImage = UIImage.imageWithColor(color: UIColor.white, size: CGSize.init(width: kWidth, height: 64))
         let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.green, rect: CGRect.init(x: 0, y: 0, width: kWidth, height: 64), alpha: originY)
         navigationController?.navigationBar.setBackgroundImage(navBgImage1, for: UIBarMetrics.default)
+        
+    }
+    func order(array:[Int]) {
         
     }
     

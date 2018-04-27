@@ -10,6 +10,8 @@
 		0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA6208DE377001A61A2 /* Second.storyboard */; };
 		0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA9208DE411001A61A2 /* Third.storyboard */; };
 		0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABAC208DE47D001A61A2 /* Fourth.storyboard */; };
+		04FEE63C209168B0004B76EB /* NSString+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE63B209168B0004B76EB /* NSString+EXT.swift */; };
+		04FEE6412091C5FC004B76EB /* HHArithmeticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */; };
 		04FF1BF02084AC11004E294A /* Picture.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF1BEF2084AC11004E294A /* Picture.xcassets */; };
 		04FF1BF22084AC7D004E294A /* HHBaseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF1BF12084AC7D004E294A /* HHBaseMode.swift */; };
 		F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */; };
@@ -92,6 +94,8 @@
 		0462ABA7208DE377001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 		0462ABAA208DE411001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Third.storyboard; sourceTree = "<group>"; };
 		0462ABAD208DE47D001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Fourth.storyboard; sourceTree = "<group>"; };
+		04FEE63B209168B0004B76EB /* NSString+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+EXT.swift"; sourceTree = "<group>"; };
+		04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHArithmeticModel.swift; sourceTree = "<group>"; };
 		04FF1BEF2084AC11004E294A /* Picture.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Picture.xcassets; sourceTree = "<group>"; };
 		04FF1BF12084AC7D004E294A /* HHBaseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseMode.swift; sourceTree = "<group>"; };
 		F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTTPRequest.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 		0462AB0E208D7AF9001A61A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +312,16 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		04FEE63D20916BFD004B76EB /* HHCustomer */ = {
+			isa = PBXGroup;
+			children = (
+				F5098D8A1E8E0085008D468C /* HHAnimations */,
+				F5146AAA1E8A44EA00E28892 /* HHVC */,
+				F5146AAB1E8A44EA00E28892 /* HHView */,
+			);
+			path = HHCustomer;
+			sourceTree = "<group>";
+		};
 		04FF1BEB2084ABEB004E294A /* First */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +384,7 @@
 		F50FA5331E9CDFC5009A2814 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				04FEE63D20916BFD004B76EB /* HHCustomer */,
 				F5146AAC1E8A44EA00E28892 /* HHBase */,
 				04FF1BEB2084ABEB004E294A /* First */,
 				04FF1BEC2084ABEB004E294A /* Fourth */,
@@ -382,7 +398,6 @@
 				F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */,
 				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
 				F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */,
-				F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */,
 				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
 				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
 			);
@@ -392,6 +407,7 @@
 		F50FA55A1E9D04D2009A2814 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				F50FA5401E9CDFC5009A2814 /* HHTabBarVC.swift */,
 				F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */,
 				04FF1BEF2084AC11004E294A /* Picture.xcassets */,
 				F58A28DE1E72734A003A7728 /* Assets.xcassets */,
@@ -518,6 +534,7 @@
 				F5146AB31E8A60EA00E28892 /* UIView+Frame.swift */,
 				F56224E91EA5F5EE00CC73FB /* UIViewController+EXT.swift */,
 				F5B588891EC3F935004CE707 /* UIButton+EXT.swift */,
+				04FEE63B209168B0004B76EB /* NSString+EXT.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -544,9 +561,6 @@
 			isa = PBXGroup;
 			children = (
 				F50FA55B1E9D07F2009A2814 /* Vender */,
-				F5098D8A1E8E0085008D468C /* HHAnimations */,
-				F5146AAA1E8A44EA00E28892 /* HHVC */,
-				F5146AAB1E8A44EA00E28892 /* HHView */,
 				F5146AAD1E8A44EA00E28892 /* Expand */,
 				F50FA5331E9CDFC5009A2814 /* Class */,
 				F50FA55A1E9D04D2009A2814 /* Other */,
@@ -702,6 +716,7 @@
 				F5EE9A681EB1DC0E00AD0745 /* HHSAnimation1.swift in Sources */,
 				F50FA5591E9CDFC5009A2814 /* ThirdViewController.swift in Sources */,
 				F50FA5511E9CDFC5009A2814 /* HHPerson.swift in Sources */,
+				04FEE6412091C5FC004B76EB /* HHArithmeticModel.swift in Sources */,
 				F50FA5921E9D0800009A2814 /* UIWebView+AFNetworking.m in Sources */,
 				F5179CEF1E84F21400F6289A /* HPanCell.swift in Sources */,
 				F50FA5901E9D0800009A2814 /* UIProgressView+AFNetworking.m in Sources */,
@@ -750,6 +765,7 @@
 				F50FA54F1E9CDFC5009A2814 /* HHImageViewCell.swift in Sources */,
 				F50FA5481E9CDFC5009A2814 /* cellModel.swift in Sources */,
 				F50FA5831E9D0800009A2814 /* AFNetworkReachabilityManager.m in Sources */,
+				04FEE63C209168B0004B76EB /* NSString+EXT.swift in Sources */,
 				F5146AB21E8A45E800E28892 /* UIImage+EXT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
