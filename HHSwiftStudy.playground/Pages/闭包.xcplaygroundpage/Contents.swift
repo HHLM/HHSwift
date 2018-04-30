@@ -6,6 +6,8 @@ import Foundation
     1.相当于OC中得block
     2.可以当做参数传递
     3.需要的时候再执行
+ 
+ Swift中：函数是特殊的闭包
  */
 
 
@@ -13,18 +15,32 @@ func sum(x:Int,y:Int) ->Int {
     return x + y
 }
 
+func a(){}
+let aa = a
+
+
 sum(x: 10, y: 10)
 
-let sss = sum
+let hh_func = sum
+print(sum)
+
+
+/*
+ OC的block
+ void(^b) = ^{};
+ */
 
 //最简单的闭包
-
 let block = {
     print("hello world")
 }
 
 block()
 //闭包定义
+
+//带参数的的闭包 待返回值
+// {形参列表 -> 返回值 in 实现代码 }
+
 
 let funcDemo = {( x:Int, y:Int) -> Int in
 
