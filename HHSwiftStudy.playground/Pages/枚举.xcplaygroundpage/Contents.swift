@@ -113,10 +113,6 @@ func evaluate(_ expression: ArithemticExpression) -> Int {
     case let .multiplication(left, right):
         return evaluate(left) * evaluate(right)
         
-    default:
-        
-        break
-        
     }
 }
 print(sum)

@@ -16,21 +16,19 @@ extension UserDefaults {
 
 class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate{
 
+    
     let model = cellModel()
-    
-    
-    
     
     var array :Array<Any>  {
     
         let  arr = model.dataArray
     
         UserDefaults.HHData.name.store(value: "HHLM")
+        
         print(UserDefaults.HHData.name.storeString ?? "")
+        
         return arr
     }
-    
-    
     
     
     /*
@@ -84,6 +82,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         let name = "ssss"
         name.length()
         
+        
+        HHPerson.propertyList()
         
         view.backgroundColor = .red
         navigationItem.title = "第一页"
