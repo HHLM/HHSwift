@@ -68,22 +68,21 @@ reversedNames = names.sorted(by:backward)
 { (parameters) -> (return type) in statements
     
 }
-
  */
 
-
+//如果闭包是最后一个参数, 可以直接将闭包写到参数列表后面, 这样可以提高阅读性, 称之为尾随闭包
 
 func someFunctionThatTakesAClosure(clous:() -> Int) ->Int {
- 
     print("尾随闭包")
     return 100000
 }
+
 someFunctionThatTakesAClosure {
     return 1000
 }
 
 someFunctionThatTakesAClosure { () -> Int in
- return 10
+    return 10
 }
 
 func sun(s1:String,s2:String) -> Int {
@@ -92,9 +91,10 @@ func sun(s1:String,s2:String) -> Int {
 
 let hh = { (s2:String,s1:String) -> Int in
     return 100
-    
 }
 
-let demo = {
-    print("没有参数没有返回值的闭包，可以省略所有的")
+//没有参数么有返回值可以省略in
+let demo = {(string:String) in
+    print("没有参数没有返回值的闭包，可以省略所有的：\(string)")
 }
+demo("ssss")
