@@ -72,6 +72,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         return myTable
     }()
     
+    
+    
     private var name:String {
     
         return "HHLM"
@@ -82,7 +84,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         
         
         let name = "ssss"
-        name.length()
+        
+        print("name长度：\(name.length())")
         
         
         view.backgroundColor = .red
