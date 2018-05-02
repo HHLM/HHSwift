@@ -6,6 +6,8 @@ import Foundation
     1.相当于OC中得block
     2.可以当做参数传递
     3.需要的时候再执行
+ 
+ Swift中：函数是特殊的闭包
  */
 
 
@@ -13,18 +15,32 @@ func sum(x:Int,y:Int) ->Int {
     return x + y
 }
 
+func a(){}
+let aa = a
+
+
 sum(x: 10, y: 10)
 
-let sss = sum
+let hh_func = sum
+print(sum)
+
+
+/*
+ OC的block
+ void(^b) = ^{};
+ */
 
 //最简单的闭包
-
 let block = {
     print("hello world")
 }
 
 block()
 //闭包定义
+
+//带参数的的闭包 待返回值
+// {形参列表 -> 返回值 in 实现代码 }
+
 
 let funcDemo = {( x:Int, y:Int) -> Int in
 
@@ -52,22 +68,21 @@ reversedNames = names.sorted(by:backward)
 { (parameters) -> (return type) in statements
     
 }
-
  */
 
-
+//如果闭包是最后一个参数, 可以直接将闭包写到参数列表后面, 这样可以提高阅读性, 称之为尾随闭包
 
 func someFunctionThatTakesAClosure(clous:() -> Int) ->Int {
- 
     print("尾随闭包")
     return 100000
 }
+
 someFunctionThatTakesAClosure {
     return 1000
 }
 
 someFunctionThatTakesAClosure { () -> Int in
- return 10
+    return 10
 }
 
 func sun(s1:String,s2:String) -> Int {
@@ -76,9 +91,10 @@ func sun(s1:String,s2:String) -> Int {
 
 let hh = { (s2:String,s1:String) -> Int in
     return 100
-    
 }
 
-let demo = {
-    print("没有参数没有返回值的闭包，可以省略所有的")
+//没有参数么有返回值可以省略in
+let demo = {(string:String) in
+    print("没有参数没有返回值的闭包，可以省略所有的：\(string)")
 }
+demo("ssss")

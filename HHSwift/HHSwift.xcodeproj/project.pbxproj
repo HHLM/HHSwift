@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0432AEE420970BE40027C10F /* HHCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */; };
 		0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA6208DE377001A61A2 /* Second.storyboard */; };
 		0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA9208DE411001A61A2 /* Third.storyboard */; };
 		0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABAC208DE47D001A61A2 /* Fourth.storyboard */; };
@@ -91,6 +92,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCollectionViewVC.swift; sourceTree = "<group>"; };
 		0462ABA7208DE377001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 		0462ABAA208DE411001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Third.storyboard; sourceTree = "<group>"; };
 		0462ABAD208DE47D001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Fourth.storyboard; sourceTree = "<group>"; };
@@ -209,6 +211,9 @@
 			isa = PBXGroup;
 			children = (
 				F50FA5361E9CDFC5009A2814 /* FirstViewController.swift */,
+				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
+				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
+				0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 		0462AB0E208D7AF9001A61A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
 				04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */,
 			);
 			path = Model;
@@ -224,6 +230,13 @@
 		0462AB0F208D7AF9001A61A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */,
+				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
+				F50FA53B1E9CDFC5009A2814 /* HHCell.swift */,
+				F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */,
+				F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */,
+				F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */,
+				F50FA5391E9CDFC5009A2814 /* HHAnimationCell.xib */,
 				F5179CEE1E84F21400F6289A /* HPanCell.swift */,
 			);
 			path = View;
@@ -390,16 +403,6 @@
 				04FF1BEC2084ABEB004E294A /* Fourth */,
 				04FF1BEE2084ABEB004E294A /* Second */,
 				04FF1BED2084ABEB004E294A /* Third */,
-				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
-				F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */,
-				F50FA5391E9CDFC5009A2814 /* HHAnimationCell.xib */,
-				F50FA53B1E9CDFC5009A2814 /* HHCell.swift */,
-				F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */,
-				F50FA53D1E9CDFC5009A2814 /* HHImageViewCell.xib */,
-				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
-				F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */,
-				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
-				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -763,6 +766,7 @@
 				F50FA5891E9D0800009A2814 /* README.md in Sources */,
 				F5B0F09F1E9C772F0056E2C1 /* HHUserDefaults.swift in Sources */,
 				F50FA54F1E9CDFC5009A2814 /* HHImageViewCell.swift in Sources */,
+				0432AEE420970BE40027C10F /* HHCollectionViewVC.swift in Sources */,
 				F50FA5481E9CDFC5009A2814 /* cellModel.swift in Sources */,
 				F50FA5831E9D0800009A2814 /* AFNetworkReachabilityManager.m in Sources */,
 				04FEE63C209168B0004B76EB /* NSString+EXT.swift in Sources */,

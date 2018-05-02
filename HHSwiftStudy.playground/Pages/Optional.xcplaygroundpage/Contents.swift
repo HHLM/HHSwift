@@ -6,6 +6,8 @@ var str = "Hello, playground"
 
 //: [Next](@next)
 
+//定义对象 通常是可选的
+
 //可选类型
 
 var num: Int? = 10 //num可能是nil
@@ -20,6 +22,7 @@ let rr = num! + 100
 //下面代码 当num时nil时候 if分支里面的代码不户执行
 if let n = num {
     let r = n + 10
+    print("r=\(r)")
     
 }
 
