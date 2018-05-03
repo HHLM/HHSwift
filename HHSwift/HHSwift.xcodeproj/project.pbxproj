@@ -11,6 +11,8 @@
 		0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA6208DE377001A61A2 /* Second.storyboard */; };
 		0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA9208DE411001A61A2 /* Third.storyboard */; };
 		0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABAC208DE47D001A61A2 /* Fourth.storyboard */; };
+		04B159EB2099599C00258128 /* UILable+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B159EA2099599C00258128 /* UILable+EXT.swift */; };
+		04B159EE20995A5600258128 /* UILabel+EXT.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B159ED20995A5600258128 /* UILabel+EXT.m */; };
 		04FEE63C209168B0004B76EB /* NSString+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE63B209168B0004B76EB /* NSString+EXT.swift */; };
 		04FEE6412091C5FC004B76EB /* HHArithmeticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */; };
 		04FF1BF02084AC11004E294A /* Picture.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF1BEF2084AC11004E294A /* Picture.xcassets */; };
@@ -96,6 +98,9 @@
 		0462ABA7208DE377001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 		0462ABAA208DE411001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Third.storyboard; sourceTree = "<group>"; };
 		0462ABAD208DE47D001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Fourth.storyboard; sourceTree = "<group>"; };
+		04B159EA2099599C00258128 /* UILable+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+EXT.swift"; sourceTree = "<group>"; };
+		04B159EC20995A5600258128 /* UILabel+EXT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+EXT.h"; sourceTree = "<group>"; };
+		04B159ED20995A5600258128 /* UILabel+EXT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EXT.m"; sourceTree = "<group>"; };
 		04FEE63B209168B0004B76EB /* NSString+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString+EXT.swift"; sourceTree = "<group>"; };
 		04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHArithmeticModel.swift; sourceTree = "<group>"; };
 		04FF1BEF2084AC11004E294A /* Picture.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Picture.xcassets; sourceTree = "<group>"; };
@@ -221,8 +226,12 @@
 		0462AB0E208D7AF9001A61A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
 				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
 				04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */,
+				04B159EA2099599C00258128 /* UILable+EXT.swift */,
+				04B159EC20995A5600258128 /* UILabel+EXT.h */,
+				04B159ED20995A5600258128 /* UILabel+EXT.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				F50FA53F1E9CDFC5009A2814 /* HHScrollView.swift */,
-				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
 				F50FA53B1E9CDFC5009A2814 /* HHCell.swift */,
 				F50FA5381E9CDFC5009A2814 /* HHAnimationCell.swift */,
 				F50FA53C1E9CDFC5009A2814 /* HHImageViewCell.swift */,
@@ -730,6 +738,7 @@
 				F50FA58B1E9D0800009A2814 /* AFImageDownloader.m in Sources */,
 				F50FA5541E9CDFC5009A2814 /* HHTableAnimationVC.swift in Sources */,
 				F50FA5871E9D0800009A2814 /* AFURLSessionManager.m in Sources */,
+				04B159EE20995A5600258128 /* UILabel+EXT.m in Sources */,
 				F50FA58E1E9D0800009A2814 /* UIButton+AFNetworking.m in Sources */,
 				F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */,
 				F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */,
@@ -748,6 +757,7 @@
 				F50FA58A1E9D0800009A2814 /* AFAutoPurgingImageCache.m in Sources */,
 				F50FA5531E9CDFC5009A2814 /* HHTabBarVC.swift in Sources */,
 				F50FA5581E9CDFC5009A2814 /* SecondViewController.swift in Sources */,
+				04B159EB2099599C00258128 /* UILable+EXT.swift in Sources */,
 				F50FA5521E9CDFC5009A2814 /* HHScrollView.swift in Sources */,
 				F50FA5551E9CDFC5009A2814 /* HHTableImageVC.swift in Sources */,
 				F5C980FB1FADB55B008EAAC9 /* HHUIDemoVC.swift in Sources */,

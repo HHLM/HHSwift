@@ -136,6 +136,7 @@ func quickSortArray(array:inout [Int],left:Int,right:Int) {
 
 
 func quickSort<T:Comparable>(_ a:[T])->[T] {
+   //数组长度 若大已于1 执行大括号后面的
     guard a.count > 1 else {
         return a
     }
