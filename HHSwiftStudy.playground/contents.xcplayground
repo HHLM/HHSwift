@@ -21,5 +21,6 @@
         <page name='高级运算符'/>
         <page name='GCD'/>
         <page name='2017-11-4'/>
+        <page name='懒加载'/>
     </pages>
 </playground>

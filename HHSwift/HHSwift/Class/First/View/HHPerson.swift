@@ -24,6 +24,8 @@ class HHPerson: NSObject {
     }
     
     
+    
+    
     class func propertyList()->() {
         
         var count:UInt32 = 0

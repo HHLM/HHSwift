@@ -79,9 +79,13 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         super.viewDidLoad()
         
         
+        
         let name = "ssss"
         name.length()
         
+        print(Bundle.init().infoDictionary ?? "")
+        let p = HHBaseMode()
+        print(p.title)
         
         HHPerson.propertyList()
         
