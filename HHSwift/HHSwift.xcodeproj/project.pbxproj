@@ -231,13 +231,11 @@
 				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
 				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
 				04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */,
-<<<<<<< HEAD
 				042AB030209B5B1500FF3BC6 /* Bundel+EXT.swift */,
-=======
+
 				04B159EA2099599C00258128 /* UILable+EXT.swift */,
 				04B159EC20995A5600258128 /* UILabel+EXT.h */,
 				04B159ED20995A5600258128 /* UILabel+EXT.m */,
->>>>>>> 4f71e6a69d993fb7430bf141efd865ffd0ed0f1c
 			);
 			path = Model;
 			sourceTree = "<group>";
