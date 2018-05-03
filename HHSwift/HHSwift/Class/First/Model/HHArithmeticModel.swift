@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 
+//MARK:算法 冒泡排序 、插入排序 、快速排序
+
 class HHArithmeticModel: NSObject {
 
     /*
@@ -18,6 +20,7 @@ class HHArithmeticModel: NSObject {
         super.init()
         var arr : Array<Int> = [10,23,21,30,6];
         bubleSort(array:&arr)
+        quickSortArray(array: &arr, left: 0, right: arr.count - 1)
     }
 }
 /*
@@ -102,4 +105,67 @@ func insertSort(array:inout [Int]) {
         }
     }
 }
+
+func quickSort(array:inout [Int],left:Int,right:Int) -> Int {
+    
+    var pivot_index = left
+    let piovt = array[left]
+    for i in (left ... right) {
+        if array[i] < piovt {
+            pivot_index += 1
+            if pivot_index != i {
+                let temp = array[i]
+                array[i] = array[pivot_index]
+                array[pivot_index] = temp;
+            }
+        }
+    }
+    let temp = array[left]
+    array[left] = array[pivot_index]
+    array[pivot_index] = temp;
+    return pivot_index;
+}
+
+func quickSortArray(array:inout [Int],left:Int,right:Int) {
+    if left < right {
+        let pivot_index = quickSort(array: &array, left: left, right: right)
+        quickSortArray(array: &array, left: left, right: pivot_index - 1)
+        quickSortArray(array: &array, left: pivot_index, right: right)
+    }
+}
+
+
+func quickSort<T:Comparable>(_ a:[T])->[T] {
+   //数组长度 若大已于1 执行大括号后面的
+    guard a.count > 1 else {
+        return a
+    }
+    let middle = a[a.count/2]
+    let less = a.filter {$0 < middle}
+    let equal = a.filter  {$0 == middle}
+    let greater = a.filter {$0 > middle}
+    return quickSort(less) + equal + quickSort(greater)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

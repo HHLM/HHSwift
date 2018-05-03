@@ -13,10 +13,23 @@ class HHPerson: NSObject {
     var name:String?
     var age :Int = 0
     
+    
+    /*
+      1、 遍历构造函数 允许返回nil
+        - 正常的构造函数一定会创建对象
+        - 判断给定的参数是否符合条件，如果不符合条件，直接返回nil，不会创建对象，减少内存开销
+     2、**只有** 遍历够着函数中使用 ‘self.init’ 构造当前对象
+        - 没有convenience 关键字的构造函数是负责创建对象的，反之用来检查条件的，本身不负责对象的创建
+     3、如果遍历构造函数中使用，当前对象的属性
+     
+     */
+    
     init(dict:[String:String]) {
         super.init()
         setValuesForKeys(dict)
     }
+    
+    
     
     override var description: String {
         let keys = ["name","age"]
@@ -57,5 +70,12 @@ class HHPerson: NSObject {
     func loadData (finish:() -> ()){
         finish()
     }
+    
+    //析构函数
+    deinit {
+        
+    }
 
 }
+
+

@@ -70,6 +70,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         return myTable
     }()
     
+    
+    
     private var name:String {
     
         return "HHLM"
@@ -81,7 +83,8 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         
         
         let name = "ssss"
-        name.length()
+        
+        print("name长度：\(name.length())")
         
         print(Bundle.init().infoDictionary ?? "")
         let p = HHBaseMode()
