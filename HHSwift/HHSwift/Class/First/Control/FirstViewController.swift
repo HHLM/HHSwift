@@ -146,9 +146,7 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let originY = (scrollView.contentOffset.y - 64)/64.0
-        
-        print(originY)
-        
+        DLog(originY)
         let navBgImage = UIImage.imageWithColor(color: UIColor.white, size: CGSize.init(width: kWidth, height: 64))
         let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.green, rect: CGRect.init(x: 0, y: 0, width: kWidth, height: 64), alpha: originY)
         navigationController?.navigationBar.setBackgroundImage(navBgImage1, for: UIBarMetrics.default)
