@@ -17,6 +17,19 @@ class HHBaseMode: NSObject {
     var name : String
     var data : String
     
+    //只读属性
+    var title : String {
+        return "HHLM"
+    }
+    
+    var study : String {
+        get {
+            return self.study
+        }
+        set {
+            self.study = newValue
+        }
+    }
     
     /*!  Swift命名空间 - 就是项目名称
      默认 所有类都是共享的，可以直接访问 不需要import

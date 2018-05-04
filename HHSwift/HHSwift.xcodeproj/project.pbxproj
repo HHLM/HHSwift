@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042AB031209B5B1500FF3BC6 /* Bundel+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AB030209B5B1500FF3BC6 /* Bundel+EXT.swift */; };
 		0432AEE420970BE40027C10F /* HHCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */; };
 		0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA6208DE377001A61A2 /* Second.storyboard */; };
 		0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0462ABA9208DE411001A61A2 /* Third.storyboard */; };
@@ -94,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042AB030209B5B1500FF3BC6 /* Bundel+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundel+EXT.swift"; sourceTree = "<group>"; };
 		0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHCollectionViewVC.swift; sourceTree = "<group>"; };
 		0462ABA7208DE377001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Second.storyboard; sourceTree = "<group>"; };
 		0462ABAA208DE411001A61A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HHSwift/Base.lproj/Third.storyboard; sourceTree = "<group>"; };
@@ -229,6 +231,8 @@
 				F50FA53E1E9CDFC5009A2814 /* HHPerson.swift */,
 				F50FA5351E9CDFC5009A2814 /* cellModel.swift */,
 				04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */,
+				042AB030209B5B1500FF3BC6 /* Bundel+EXT.swift */,
+
 				04B159EA2099599C00258128 /* UILable+EXT.swift */,
 				04B159EC20995A5600258128 /* UILabel+EXT.h */,
 				04B159ED20995A5600258128 /* UILabel+EXT.m */,
@@ -763,6 +767,7 @@
 				F5C980FB1FADB55B008EAAC9 /* HHUIDemoVC.swift in Sources */,
 				F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */,
 				F50FA58F1E9D0800009A2814 /* UIImageView+AFNetworking.m in Sources */,
+				042AB031209B5B1500FF3BC6 /* Bundel+EXT.swift in Sources */,
 				F54598101FB1D081009CCDA2 /* HHAddDemoVC.swift in Sources */,
 				F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */,
 				F50FA5821E9D0800009A2814 /* AFHTTPSessionManager.m in Sources */,
