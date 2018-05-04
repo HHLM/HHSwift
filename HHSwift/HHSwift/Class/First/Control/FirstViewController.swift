@@ -160,5 +160,16 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        let navBgImage = UIImage.imageWithColor(color: UIColor.white, size: CGSize.init(width: kWidth, height: 64))
+        let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.red, rect: CGRect.init(x: 0, y: 0, width: kWidth, height: 64), alpha: 1)
+        navigationController?.navigationBar.setBackgroundImage(navBgImage1, for: UIBarMetrics.default)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let navBgImage = UIImage.imageWithColor(color: UIColor.white, size: CGSize.init(width: kWidth, height: 64))
+        let  navBgImage1 = navBgImage?.tintedImage(color: UIColor.green, rect: CGRect.init(x: 0, y: 0, width: kWidth, height: 64), alpha: 0)
+        navigationController?.navigationBar.setBackgroundImage(navBgImage1, for: UIBarMetrics.default)
+    }
 
 }
