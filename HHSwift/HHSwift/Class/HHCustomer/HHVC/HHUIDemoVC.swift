@@ -156,7 +156,7 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
     
     func hh_func2(finished: @escaping (_ name : String) -> ()) -> () {
         _ = hh_func
-        
+        //
         //闭包中和self中相互引用 就造成循环引用
         //Swift中解决闭包循环引用的三种方法
         //MARK: 1、类似于OC中的 __weak
