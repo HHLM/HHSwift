@@ -59,6 +59,9 @@ class HHUIDemoVC: HHBaseVC,UITableViewDelegate,UITableViewDataSource {
      */
     
     
+    let arr:[String] = [String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tab)
