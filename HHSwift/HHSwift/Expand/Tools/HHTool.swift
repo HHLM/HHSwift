@@ -10,6 +10,9 @@ import UIKit
 
 import Foundation
 
+
+
+
 // MARK: - 尺寸大小
 
 public let kWidth = UIScreen.main.bounds.size.width
@@ -168,5 +171,13 @@ func kReadDictionaryFilePath(filePath:String) -> NSDictionary {
 }
 
 class HHTool: NSObject {
-    
+    class func getRandomNum() -> NSInteger {
+        
+        let randomNum = NSInteger(arc4random()%365) + 1;
+        print("randomNum = ",randomNum,"?");
+        
+        return randomNum;
+    }
+
 }
+

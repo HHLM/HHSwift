@@ -42,9 +42,8 @@ extension UIImage {
         
         return scaleImage
     }
-    
+
     // MARK:-给图片着色
-    
     func tintedImage(color:UIColor,rect:CGRect,alpha:CGFloat) -> UIImage? {
         
         //TODO:xxx

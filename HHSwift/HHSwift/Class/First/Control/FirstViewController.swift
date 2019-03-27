@@ -95,8 +95,12 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
         view.backgroundColor = .red
         navigationItem.title = "第一页"
         //大标题栏目
-        navigationController?.navigationBar.prefersLargeTitles = false
-        
+//        navigationController?.navigationBar.prefersLargeTitles = false
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = false
+        } else {
+            // Fallback on earlier versions
+        }
         view.addSubview(self.table)
         print("nmae" + name)
         HHTTPRequest().HHRequestTest()
