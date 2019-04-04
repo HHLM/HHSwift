@@ -19,10 +19,11 @@ public let kWidth = UIScreen.main.bounds.size.width
 
 public let kHeight = UIScreen.main.bounds.size.height
 
+public let kNavBarHeight = 64
+
 public func kView_with(view:UIView) -> CGFloat {
     return view.frame.size.width
 }
-
 
 public func kView_heigth(view:UIView) -> CGFloat {
     return view.frame.size.height
@@ -57,6 +58,10 @@ public func DLog<T>(_ message:T,fileName:String = #file,method:String = #functio
         print(array.last ?? "")
         
     #endif
+}
+
+public func print(address o: UnsafeRawPointer ) {
+    print(String(format: "%p", Int(bitPattern: o)))
 }
 
 // MARK: - 颜色

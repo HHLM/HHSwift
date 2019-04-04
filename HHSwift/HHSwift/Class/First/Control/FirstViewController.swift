@@ -72,14 +72,44 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     
     
     
+   
+
+    
+    
+    
+    
     private var name:String {
     
         return "HHLM"
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let array = [1,2,3]
+        var array1  = array
+        print(address:  array)
+        print(address:  array1)
+        array1.append(4)
+        print(address:  array)
+        print(address:  array1)
+        array1.append(5)
+        array1.append(5)
+        print(address:  array1)
+        array1.append(5)
+        print(address:  array1)
+        array1.append(5)
+        print(address:  array1)
+        
+        let wordsworth = """
+                        I wandered lonely as a cloud
+                        that floats on high
+                        o'er vales and hills
+                        """
+        
+        print(wordsworth)
         
         
         let name = "ssss"
