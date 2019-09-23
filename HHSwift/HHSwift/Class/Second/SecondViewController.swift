@@ -24,9 +24,9 @@ class SecondViewController: UIViewController {
 
     fileprivate lazy var loginBtn:UIButton = {
     
-        let btn = UIButton.init(type: UIButtonType.custom)
+        let btn = UIButton.init(type: UIButton.ButtonType.custom)
         btn.frame = CGRect.init(x: kWidth/2 - 100/2, y: 100, width: 100, height: 60)
-        btn.addTarget(self, action: #selector(login), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(login), for: UIControl.Event.touchUpInside)
         
         btn.setTitle("登陆", for: .normal)
         btn.backgroundColor = .red

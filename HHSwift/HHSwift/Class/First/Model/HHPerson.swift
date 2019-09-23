@@ -61,7 +61,7 @@ class HHPerson: NSObject {
             
             //5、转成String字符串
             
-            let name = String(utf8String: cName!)
+            let name = String(utf8String: cName)
             
             DLog(name ?? "我是假的")
         }

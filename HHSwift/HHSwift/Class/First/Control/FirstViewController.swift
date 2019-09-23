@@ -151,7 +151,7 @@ class FirstViewController: HHBaseVC,UITableViewDelegate,UITableViewDataSource,UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.selectionStyle = .none
         let modes = array[indexPath.section] as! [cellModel]
         let cmodel = modes[indexPath.row]

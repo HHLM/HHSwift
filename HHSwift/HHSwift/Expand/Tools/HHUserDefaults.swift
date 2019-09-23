@@ -23,59 +23,59 @@ public protocol UserDefaultSettable {
 
 public extension UserDefaultSettable where Self:RawRepresentable,Self.RawValue == String {
 
-    public func store(value: Any?) {
+    func store(value: Any?) {
         UserDefaults.standard.set(value, forKey: uniqueKey)
     }
-    public var storeValue: Any? {
+    var storeValue: Any? {
         return UserDefaults.standard.value(forKey: uniqueKey)
     }
-    public var  storeString:String? {
+    var  storeString:String? {
         return storeValue as? String
     }
     
     
-    public func store(url: URL?){
+    func store(url: URL?){
         UserDefaults.standard.set(url, forKey: uniqueKey)
     }
-    public var storeURL:URL? {
+    var storeURL:URL? {
       return  UserDefaults.standard.url(forKey: uniqueKey)
     }
     
     
-    public func store(value:Bool) {
+    func store(value:Bool) {
         UserDefaults.standard.set(value, forKey: uniqueKey)
     }
-    public var storeBool:Bool {
+    var storeBool:Bool {
         return  UserDefaults.standard.bool(forKey: uniqueKey)
     }
     
-    public func store(value:Int) {
+    func store(value:Int) {
         UserDefaults.standard.set(value, forKey: uniqueKey)
     }
-    public var storeInt:Int {
+    var storeInt:Int {
         return UserDefaults.standard.integer(forKey: uniqueKey)
     }
     
-    public func store(value:Float) {
+    func store(value:Float) {
         UserDefaults.standard.set(value, forKey: uniqueKey)
     }
-    public var storeFloat:Float {
+    var storeFloat:Float {
         return UserDefaults.standard.float(forKey: uniqueKey)
     }
     
-    public func store(value:Double) {
+    func store(value:Double) {
         UserDefaults.standard.set(value, forKey: uniqueKey)
     }
-    public var storeDouble:Double {
+    var storeDouble:Double {
         return UserDefaults.standard.double(forKey: uniqueKey)
     }
     
-    public var uniqueKey:String {
+    var uniqueKey:String {
         return "\(Self.self).\(rawValue)"
     }
     
     //删除
-    public func removed(){
+    func removed(){
         UserDefaults.standard.removeObject(forKey: uniqueKey)
     }
     

@@ -21,7 +21,7 @@ class HHAddDemoVC: HHBaseVC {
         super.viewDidLoad()
         setupUI()
     }
-    func sum() {
+    @objc func sum() {
         
         guard  let num1 = Int(t1?.text ?? "0"),
             let num2 = Int(t2?.text ?? "0")

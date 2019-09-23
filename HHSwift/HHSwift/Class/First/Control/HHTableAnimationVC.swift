@@ -15,8 +15,8 @@ class HHTableAnimationVC: UIViewController,UITableViewDelegate,UITableViewDataSo
         tab.delegate = self
         tab.dataSource = self
         tab.estimatedRowHeight = 60
-        tab.rowHeight = UITableViewAutomaticDimension
-        tab.separatorInset = UIEdgeInsetsMake(0,15,0,15);
+        tab.rowHeight = UITableView.automaticDimension
+        tab.separatorInset = UIEdgeInsets(top: 0,left: 15,bottom: 0,right: 15);
         tab.register(UINib(nibName:"HHAnimationCell", bundle:nil),
                                     forCellReuseIdentifier:"cell")
         return tab

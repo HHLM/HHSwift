@@ -53,16 +53,16 @@ class HHTabBarVC: UITabBarController {
         tabBar.barStyle = .default
         tabBar.isTranslucent = false
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.black,NSFontAttributeName:UIFont.systemFont(ofSize: 12)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12)], for: .normal)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : kColorRandom(),NSFontAttributeName:UIFont.systemFont(ofSize: 14)], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : kColorRandom(),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 14)], for: .selected)
     }
 
     func addItem(titel:String ,imgae:String,viewController:UIViewController) {
-        viewController.tabBarItem = UITabBarItem.init(title: titel, image: UIImage(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal), tag: 0)
-        viewController.tabBarItem.image = UIImage(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal);
-        viewController.tabBarItem.selectedImage = UIImage.init(named: imgae)?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
-        addChildViewController(viewController)
+        viewController.tabBarItem = UITabBarItem.init(title: titel, image: UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), tag: 0)
+        viewController.tabBarItem.image = UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal);
+        viewController.tabBarItem.selectedImage = UIImage.init(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        addChild(viewController)
     }
 
 }

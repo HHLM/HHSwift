@@ -45,7 +45,7 @@ class HPanCell: UITableViewCell {
         let translation : CGPoint = sender.translation(in: self)
         
         
-        if(sender.state == UIGestureRecognizerState.began)
+        if(sender.state == UIGestureRecognizer.State.began)
         {
             
             
@@ -74,7 +74,7 @@ class HPanCell: UITableViewCell {
             
             
         }
-        if(sender.state == UIGestureRecognizerState.changed)
+        if(sender.state == UIGestureRecognizer.State.changed)
         {
             if(begainLeftPan)
             {
@@ -111,7 +111,7 @@ class HPanCell: UITableViewCell {
             }
             
         }
-        if(sender.state == UIGestureRecognizerState.ended)
+        if(sender.state == UIGestureRecognizer.State.ended)
         {
             
             if(view3.center.x + translation.x < self.frame.size.width/2-180)
@@ -159,7 +159,7 @@ class HPanCell: UITableViewCell {
     }
 
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         

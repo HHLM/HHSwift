@@ -40,9 +40,9 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
 
     fileprivate lazy var loginBtn:UIButton = {
         
-        let btn = UIButton.init(type: UIButtonType.custom)
+        let btn = UIButton.init(type: UIButton.ButtonType.custom)
         btn.frame = CGRect.init(x: kWidth/2 - 100/2, y: 100, width: 100, height: 60)
-        btn.addTarget(self, action: #selector(logout), for: UIControlEvents.touchUpInside)
+        btn.addTarget(self, action: #selector(logout), for: UIControl.Event.touchUpInside)
         
         btn.setTitle("退出", for: .normal)
         btn.backgroundColor = .red
@@ -71,7 +71,7 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
         
         txtfiled.isSecureTextEntry = true
         txtfiled.placeholder = "请输入密码"
-        txtfiled.borderStyle = UITextBorderStyle.roundedRect
+        txtfiled.borderStyle = UITextField.BorderStyle.roundedRect
         txtfiled.font = UIFont.systemFont(ofSize: 16)
         txtfiled.delegate = self
         print("打印位置")
@@ -140,7 +140,7 @@ class ThirdViewController: UIViewController,UITextFieldDelegate {
             sv.addSubview(label)
             margin = Double(label.right)+20.0
             label.y = sv.height/2 - label.height/2
-            print(NSStringFromCGRect(label.frame))
+            print(NSCoder.string(for: label.frame))
             
         }
         sv.contentSize = CGSize(width:margin,height:0)
