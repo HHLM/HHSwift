@@ -9,60 +9,43 @@
 import UIKit
 
 class HHTabBarVC: UITabBarController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
-        let model = cellModel()
-        
-        print(model.dataArray)
-    
-        let array = model.dataArray
-        
-        let mo = array[0]
-
-        
-        print(mo ,model.dataArr())
-        
-        
-        
         let first = FirstViewController()
 
-        let nav1 =  UINavigationController.init(rootViewController: first)
-        nav1.tabBarItem = UITabBarItem.init(title: "首页", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
-        
         let second = SecondViewController()
-        let nav2 =  UINavigationController.init(rootViewController: second)
-        nav2.tabBarItem = UITabBarItem.init(title: "一级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
-        
         
         let third = ThirdViewController()
-        let nav3 =  UINavigationController(rootViewController: third)
-        nav3.tabBarItem = UITabBarItem(title: "二级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
         
         let forth = ForthViewController()
-        let nav4 =  UINavigationController.init(rootViewController: forth)
-        nav4.tabBarItem = UITabBarItem.init(title: "三级", image: UIImage.init(named: "ic_main_mine_selected"), selectedImage: UIImage.init(named: "ic_main_mine_selected"))
-        
-        let items = [nav1,nav2,nav3,nav4]
+       
+        let items = [addItem(titel: "首页", imgae: "home", selectImage: "home_selected", viewController: first),
+                     addItem(titel: "新闻", imgae: "page", selectImage: "page_selected", viewController: second),
+                     addItem(titel: "视频", imgae: "video", selectImage: "video_selected", viewController: third),
+                     addItem(titel: "收藏", imgae: "like", selectImage: "like_selected", viewController: forth)]
+       
         viewControllers = items
-        tabBar.tintColor = kColorRandom()
-        tabBar.barTintColor = kColorRandom()
+        
+        //tabBar.tintColor = UIColor.init(white: 0, alpha: 0.8)
+        
+        tabBar.barTintColor = UIColor.white
+        
         tabBar.barStyle = .default
+        
         tabBar.isTranslucent = false
+
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.init(white: 0, alpha: 0.8),
+                                                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)], for: .normal)
+
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
+                                                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .selected)
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black,NSAttributedString.Key.font:UIFont.systemFont(ofSize: 12)], for: .normal)
-        
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor : kColorRandom(),NSAttributedString.Key.font:UIFont.systemFont(ofSize: 14)], for: .selected)
     }
 
-    func addItem(titel:String ,imgae:String,viewController:UIViewController) {
-        viewController.tabBarItem = UITabBarItem.init(title: titel, image: UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), tag: 0)
-        viewController.tabBarItem.image = UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal);
-        viewController.tabBarItem.selectedImage = UIImage.init(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        addChild(viewController)
+    func addItem(titel: String, imgae: String,selectImage:String , viewController: UIViewController) -> UINavigationController {
+        viewController.tabBarItem = UITabBarItem.init(title: titel, image:  UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal),
+                                                      selectedImage: UIImage(named: selectImage)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
+        return UINavigationController.init(rootViewController: viewController)
     }
-
 }
