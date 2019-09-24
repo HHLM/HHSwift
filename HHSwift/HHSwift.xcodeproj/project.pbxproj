@@ -20,6 +20,8 @@
 		04FEE6412091C5FC004B76EB /* HHArithmeticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */; };
 		04FF1BF02084AC11004E294A /* Picture.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FF1BEF2084AC11004E294A /* Picture.xcassets */; };
 		04FF1BF22084AC7D004E294A /* HHBaseMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF1BF12084AC7D004E294A /* HHBaseMode.swift */; };
+		94D7A8D52339B2800089C80B /* HHNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D42339B2800089C80B /* HHNavViewController.swift */; };
+		94D7A8D72339C9D90089C80B /* HHBaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */; };
 		F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */; };
 		F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */; };
 		F50FA5481E9CDFC5009A2814 /* cellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5351E9CDFC5009A2814 /* cellModel.swift */; };
@@ -331,6 +333,8 @@
 		04FEE6402091C5FC004B76EB /* HHArithmeticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHArithmeticModel.swift; sourceTree = "<group>"; };
 		04FF1BEF2084AC11004E294A /* Picture.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Picture.xcassets; sourceTree = "<group>"; };
 		04FF1BF12084AC7D004E294A /* HHBaseMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseMode.swift; sourceTree = "<group>"; };
+		94D7A8D42339B2800089C80B /* HHNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHNavViewController.swift; sourceTree = "<group>"; };
+		94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseScrollView.swift; sourceTree = "<group>"; };
 		F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTTPRequest.swift; sourceTree = "<group>"; };
 		F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F50FA5351E9CDFC5009A2814 /* cellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellModel.swift; sourceTree = "<group>"; };
@@ -990,6 +994,8 @@
 			children = (
 				F5146AAE1E8A453700E28892 /* HHBaseVC.swift */,
 				04FF1BF12084AC7D004E294A /* HHBaseMode.swift */,
+				94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */,
+				94D7A8D42339B2800089C80B /* HHNavViewController.swift */,
 			);
 			path = HHBase;
 			sourceTree = "<group>";
@@ -1219,6 +1225,8 @@
 				F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */,
 				F50FA5491E9CDFC5009A2814 /* FirstViewController.swift in Sources */,
 				F5146AB41E8A60EA00E28892 /* UIView+Frame.swift in Sources */,
+				94D7A8D52339B2800089C80B /* HHNavViewController.swift in Sources */,
+				94D7A8D72339C9D90089C80B /* HHBaseScrollView.swift in Sources */,
 				F53214331EA4575D0095B7BA /* HSHTTPRequest.swift in Sources */,
 				F5AC1B891E962335002D9BF5 /* HHAnimation3.swift in Sources */,
 				F5AC1B871E962328002D9BF5 /* HHAnimation2.swift in Sources */,
@@ -1370,6 +1378,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -1420,6 +1429,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1465,7 +1475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = HHSwift;
 			};
 			name = Debug;
@@ -1478,7 +1488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HHL.HHSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = HHSwift;
 			};
 			name = Release;

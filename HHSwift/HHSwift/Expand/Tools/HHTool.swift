@@ -19,7 +19,13 @@ public let kWidth = UIScreen.main.bounds.size.width
 
 public let kHeight = UIScreen.main.bounds.size.height
 
-public let kNavBarHeight = 64
+public let kStatusHeight = UIApplication.shared.statusBarFrame.size.height
+
+public let kNavBarHeight =  (kStatusHeight > 20) ? 88 : 64
+
+public let kSafeBottomBar = (kStatusHeight > 20) ? 34 : 0
+
+public let kTabBarHeight = (kStatusHeight > 20) ? 83 : 49
 
 public func kView_with(view:UIView) -> CGFloat {
     return view.frame.size.width

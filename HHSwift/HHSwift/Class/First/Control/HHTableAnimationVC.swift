@@ -30,6 +30,9 @@ class HHTableAnimationVC: UIViewController,UITableViewDelegate,UITableViewDataSo
         // Do any additional setup after loading the view.
     }
 
+    @objc func hh_popBack() {
+        print("-------被拦截 可以自定义返回VC了-------");
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

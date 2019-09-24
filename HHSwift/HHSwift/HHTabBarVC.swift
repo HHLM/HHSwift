@@ -43,9 +43,9 @@ class HHTabBarVC: UITabBarController {
         
     }
 
-    func addItem(titel: String, imgae: String,selectImage:String , viewController: UIViewController) -> UINavigationController {
+    func addItem(titel: String, imgae: String,selectImage:String , viewController: UIViewController) -> HHNavViewController {
         viewController.tabBarItem = UITabBarItem.init(title: titel, image:  UIImage(named: imgae)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal),
                                                       selectedImage: UIImage(named: selectImage)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal))
-        return UINavigationController.init(rootViewController: viewController)
+        return HHNavViewController.init(rootViewController: viewController)
     }
 }
