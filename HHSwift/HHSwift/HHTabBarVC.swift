@@ -12,7 +12,7 @@ class HHTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let first = FirstViewController()
+        let first = HHMainViewController()
 
         let second = SecondViewController()
         

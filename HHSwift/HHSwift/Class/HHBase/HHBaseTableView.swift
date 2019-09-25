@@ -7,11 +7,9 @@
 //
 
 import UIKit
-
+import RxSwift
 class HHBaseTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
    
-    
-
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         self.delegate = self
@@ -20,6 +18,8 @@ class HHBaseTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
     required init?(coder: NSCoder) {
         fatalError()
     }
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
            1
@@ -37,8 +37,11 @@ class HHBaseTableView: UITableView,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        disSelec(int: indexPath.row)
     }
     
+    @objc func disSelec(int : Int) {
+        
+    }
 }
 

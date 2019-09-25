@@ -23,6 +23,8 @@
 		647F029247B632B967DE83AD /* Pods_HHSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45DCF0D4459700BE4A7ACE5 /* Pods_HHSwiftUITests.framework */; };
 		9436EDBE233B19C8000BAA2B /* HHBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436EDBD233B19C8000BAA2B /* HHBaseViewModel.swift */; };
 		9436EDC0233B1AAB000BAA2B /* HHBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436EDBF233B1AAB000BAA2B /* HHBaseTableView.swift */; };
+		9436EDC4233B3899000BAA2B /* HHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436EDC3233B3899000BAA2B /* HHMainViewController.swift */; };
+		9436EDC6233B41C0000BAA2B /* HHBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436EDC5233B41C0000BAA2B /* HHBaseTableViewCell.swift */; };
 		94D7A8D52339B2800089C80B /* HHNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D42339B2800089C80B /* HHNavViewController.swift */; };
 		94D7A8D72339C9D90089C80B /* HHBaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */; };
 		A524EEC07B9A09BF4E037850 /* Pods_HHSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7EE8F5382919B0951B18D9 /* Pods_HHSwift.framework */; };
@@ -343,6 +345,8 @@
 		8A7EE8F5382919B0951B18D9 /* Pods_HHSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9436EDBD233B19C8000BAA2B /* HHBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseViewModel.swift; sourceTree = "<group>"; };
 		9436EDBF233B1AAB000BAA2B /* HHBaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseTableView.swift; sourceTree = "<group>"; };
+		9436EDC3233B3899000BAA2B /* HHMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHMainViewController.swift; sourceTree = "<group>"; };
+		9436EDC5233B41C0000BAA2B /* HHBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseTableViewCell.swift; sourceTree = "<group>"; };
 		94D7A8D42339B2800089C80B /* HHNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHNavViewController.swift; sourceTree = "<group>"; };
 		94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseScrollView.swift; sourceTree = "<group>"; };
 		A45DCF0D4459700BE4A7ACE5 /* Pods_HHSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -703,6 +707,7 @@
 				F50FA5421E9CDFC5009A2814 /* HHTableImageVC.swift */,
 				F50FA5411E9CDFC5009A2814 /* HHTableAnimationVC.swift */,
 				0432AEE320970BE40027C10F /* HHCollectionViewVC.swift */,
+				9436EDC3233B3899000BAA2B /* HHMainViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -823,7 +828,6 @@
 			children = (
 				F5098D8A1E8E0085008D468C /* HHAnimations */,
 				F5146AAA1E8A44EA00E28892 /* HHVC */,
-				F5146AAB1E8A44EA00E28892 /* HHView */,
 			);
 			path = HHCustomer;
 			sourceTree = "<group>";
@@ -1017,13 +1021,6 @@
 			path = HHVC;
 			sourceTree = "<group>";
 		};
-		F5146AAB1E8A44EA00E28892 /* HHView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HHView;
-			sourceTree = "<group>";
-		};
 		F5146AAC1E8A44EA00E28892 /* HHBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -1033,6 +1030,7 @@
 				9436EDBD233B19C8000BAA2B /* HHBaseViewModel.swift */,
 				94D7A8D42339B2800089C80B /* HHNavViewController.swift */,
 				9436EDBF233B1AAB000BAA2B /* HHBaseTableView.swift */,
+				9436EDC5233B41C0000BAA2B /* HHBaseTableViewCell.swift */,
 			);
 			path = HHBase;
 			sourceTree = "<group>";
@@ -1331,6 +1329,7 @@
 				F5AC1B851E962309002D9BF5 /* HHAnimation1.swift in Sources */,
 				F5AC1B8F1E962360002D9BF5 /* HHAnimation6.swift in Sources */,
 				F50FA5851E9D0800009A2814 /* AFURLRequestSerialization.m in Sources */,
+				9436EDC6233B41C0000BAA2B /* HHBaseTableViewCell.swift in Sources */,
 				F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */,
 				F5506F8D1FAC3DA100BF9175 /* HHDemo.swift in Sources */,
 				F5B5888A1EC3F935004CE707 /* UIButton+EXT.swift in Sources */,
@@ -1350,6 +1349,7 @@
 				F5C980FB1FADB55B008EAAC9 /* HHUIDemoVC.swift in Sources */,
 				F50FA54E1E9CDFC5009A2814 /* HHCell.swift in Sources */,
 				F50FA58F1E9D0800009A2814 /* UIImageView+AFNetworking.m in Sources */,
+				9436EDC4233B3899000BAA2B /* HHMainViewController.swift in Sources */,
 				042AB031209B5B1500FF3BC6 /* Bundel+EXT.swift in Sources */,
 				F54598101FB1D081009CCDA2 /* HHAddDemoVC.swift in Sources */,
 				F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */,
