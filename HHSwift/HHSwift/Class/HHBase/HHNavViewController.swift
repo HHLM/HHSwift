@@ -24,7 +24,7 @@ class HHNavViewController: UINavigationController, UINavigationControllerDelegat
     }
 
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        if viewController == self.viewControllers.first {
+        if viewController == viewControllers.first {
             interactivePopGestureRecognizer?.delegate = popDelegate
         } else {
             interactivePopGestureRecognizer?.delegate = nil
@@ -52,9 +52,9 @@ class HHNavViewController: UINavigationController, UINavigationControllerDelegat
         if vc.responds(to: sel) {
             let imp = vc.method(for: sel)
             typealias HHBackType = @convention(c) (AnyObject, Selector) -> Void
-            let back : HHBackType = unsafeBitCast(imp, to: HHBackType.self)
-            back(vc,sel)
-        }else {
+            let back: HHBackType = unsafeBitCast(imp, to: HHBackType.self)
+            back(vc, sel)
+        } else {
             popViewController(animated: true)
         }
     }

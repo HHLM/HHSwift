@@ -35,11 +35,11 @@ class HHTabBarVC: UITabBarController {
         
         tabBar.isTranslucent = false
 
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.init(white: 0, alpha: 0.8),
-                                                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)], for: .normal)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.init(white: 0, alpha: 0.8),
+                                                      NSAttributedString.Key.font: UIFont.systemFont(ofSize: 10)], for: .normal)
 
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
-                                                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .selected)
+    UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
+                                                      NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12)], for: .selected)
         
     }
 
@@ -49,3 +49,4 @@ class HHTabBarVC: UITabBarController {
         return HHNavViewController.init(rootViewController: viewController)
     }
 }
+

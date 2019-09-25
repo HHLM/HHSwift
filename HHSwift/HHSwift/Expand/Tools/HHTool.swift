@@ -15,17 +15,17 @@ import Foundation
 
 // MARK: - 尺寸大小
 
-public let kWidth = UIScreen.main.bounds.size.width
+public let kWidth:CGFloat = UIScreen.main.bounds.size.width
 
-public let kHeight = UIScreen.main.bounds.size.height
+public let kHeight:CGFloat = UIScreen.main.bounds.size.height
 
-public let kStatusHeight = UIApplication.shared.statusBarFrame.size.height
+public let kStatusHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height
 
-public let kNavBarHeight =  (kStatusHeight > 20) ? 88 : 64
+public let kNavBarHeight:CGFloat =  (kStatusHeight > 20) ? 88.0 : 64.0
 
-public let kSafeBottomBar = (kStatusHeight > 20) ? 34 : 0
+public let kSafeBottomBar:CGFloat = (kStatusHeight > 20) ? 34.0 : 0
 
-public let kTabBarHeight = (kStatusHeight > 20) ? 83 : 49
+public let kTabBarHeight:CGFloat = (kStatusHeight > 20) ? 83.0 : 49.0
 
 public func kView_with(view:UIView) -> CGFloat {
     return view.frame.size.width
