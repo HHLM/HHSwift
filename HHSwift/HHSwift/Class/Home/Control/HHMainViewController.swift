@@ -42,6 +42,8 @@ extension HHMainViewController: UITableViewDataSource,UITableViewDelegate {
         table.delegate = self
         table.dataSource = self
         table.tableHeaderView = headView
+        //*!!!:配合方法二
+        //table.register(HHBaseTableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(table)
     }
     
@@ -50,10 +52,26 @@ extension HHMainViewController: UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        //*!!!: 1、系统方法
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell.init(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+//        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator;
+//        cell.textLabel?.text = dataArray[indexPath.row]
+//        return cell;
+        //*!!!: 2、方法二注册
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+//        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator;
+//        cell.textLabel?.text = dataArray[indexPath.row]
+//        return cell
+        //*!!!: 3、方法三
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? HHBaseTableViewCell.init(style: HHBaseTableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator;
         cell.textLabel?.text = dataArray[indexPath.row]
         return cell;
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DLog(indexPath.row)
     }
 }
 //FIXME:获取数据
