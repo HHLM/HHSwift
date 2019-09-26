@@ -26,6 +26,8 @@ class HHMainViewController: HHBaseVC {
         getData()
         config()
         setupUI()
+        DLog(HHFileManager.libCachesPath())
+        DLog(HHFileManager.cachesPath())
     }
     
 }
@@ -72,6 +74,9 @@ extension HHMainViewController: UITableViewDataSource,UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DLog(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
+        let vc =  HHRxSwiftListViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 //FIXME:获取数据

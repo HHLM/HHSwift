@@ -28,6 +28,11 @@
 		94D7A8D52339B2800089C80B /* HHNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D42339B2800089C80B /* HHNavViewController.swift */; };
 		94D7A8D72339C9D90089C80B /* HHBaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */; };
 		94DA1F40233C50DE00F516D1 /* HHRxSwiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA1F3F233C50DE00F516D1 /* HHRxSwiftListViewController.swift */; };
+		94DA1F45233C531200F516D1 /* HHFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA1F44233C531200F516D1 /* HHFileManager.swift */; };
+		94DA1F47233C594800F516D1 /* HHFileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA1F46233C594800F516D1 /* HHFileManagerViewController.swift */; };
+		94DA1F49233C679400F516D1 /* RxSwift.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94DA1F48233C679400F516D1 /* RxSwift.plist */; };
+		94DA1F4C233C6BB200F516D1 /* HHRxSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DA1F4A233C6BB200F516D1 /* HHRxSwiftViewController.swift */; };
+		94DA1F4D233C6BB200F516D1 /* HHRxSwiftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94DA1F4B233C6BB200F516D1 /* HHRxSwiftViewController.xib */; };
 		A524EEC07B9A09BF4E037850 /* Pods_HHSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7EE8F5382919B0951B18D9 /* Pods_HHSwift.framework */; };
 		F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */; };
 		F50FA5471E9CDFC5009A2814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50FA5341E9CDFC5009A2814 /* AppDelegate.swift */; };
@@ -348,6 +353,11 @@
 		94D7A8D42339B2800089C80B /* HHNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHNavViewController.swift; sourceTree = "<group>"; };
 		94D7A8D62339C9D90089C80B /* HHBaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHBaseScrollView.swift; sourceTree = "<group>"; };
 		94DA1F3F233C50DE00F516D1 /* HHRxSwiftListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHRxSwiftListViewController.swift; sourceTree = "<group>"; };
+		94DA1F44233C531200F516D1 /* HHFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHFileManager.swift; sourceTree = "<group>"; };
+		94DA1F46233C594800F516D1 /* HHFileManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHFileManagerViewController.swift; sourceTree = "<group>"; };
+		94DA1F48233C679400F516D1 /* RxSwift.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RxSwift.plist; sourceTree = "<group>"; };
+		94DA1F4A233C6BB200F516D1 /* HHRxSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHRxSwiftViewController.swift; sourceTree = "<group>"; };
+		94DA1F4B233C6BB200F516D1 /* HHRxSwiftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HHRxSwiftViewController.xib; sourceTree = "<group>"; };
 		A45DCF0D4459700BE4A7ACE5 /* Pods_HHSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HHSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C557889E41C05DEF86CADD /* Pods-HHSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHSwift.debug.xcconfig"; path = "Target Support Files/Pods-HHSwift/Pods-HHSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		F50FA52F1E9CB8C5009A2814 /* HHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHTTPRequest.swift; sourceTree = "<group>"; };
@@ -895,6 +905,9 @@
 			isa = PBXGroup;
 			children = (
 				94DA1F3F233C50DE00F516D1 /* HHRxSwiftListViewController.swift */,
+				94DA1F48233C679400F516D1 /* RxSwift.plist */,
+				94DA1F4A233C6BB200F516D1 /* HHRxSwiftViewController.swift */,
+				94DA1F4B233C6BB200F516D1 /* HHRxSwiftViewController.xib */,
 			);
 			path = HHRxSwift;
 			sourceTree = "<group>";
@@ -902,6 +915,8 @@
 		94DA1F41233C50E500F516D1 /* HHFileManager */ = {
 			isa = PBXGroup;
 			children = (
+				94DA1F44233C531200F516D1 /* HHFileManager.swift */,
+				94DA1F46233C594800F516D1 /* HHFileManagerViewController.swift */,
 			);
 			path = HHFileManager;
 			sourceTree = "<group>";
@@ -1209,9 +1224,11 @@
 				0462ABA8208DE377001A61A2 /* Second.storyboard in Resources */,
 				F50FA54C1E9CDFC5009A2814 /* HHAnimationCell.xib in Resources */,
 				F50FA5501E9CDFC5009A2814 /* HHImageViewCell.xib in Resources */,
+				94DA1F4D233C6BB200F516D1 /* HHRxSwiftViewController.xib in Resources */,
 				F50FA5881E9D0800009A2814 /* LICENSE in Resources */,
 				F58A28E21E72734A003A7728 /* LaunchScreen.storyboard in Resources */,
 				042A2679209C46C900300FF7 /* UIKit.apinotes in Resources */,
+				94DA1F49233C679400F516D1 /* RxSwift.plist in Resources */,
 				0462ABAB208DE411001A61A2 /* Third.storyboard in Resources */,
 				F58A28DF1E72734A003A7728 /* Assets.xcassets in Resources */,
 				0462ABAE208DE47D001A61A2 /* Fourth.storyboard in Resources */,
@@ -1337,6 +1354,7 @@
 				F50FA5541E9CDFC5009A2814 /* HHTableAnimationVC.swift in Sources */,
 				F50FA5871E9D0800009A2814 /* AFURLSessionManager.m in Sources */,
 				04B159EE20995A5600258128 /* UILabel+EXT.m in Sources */,
+				94DA1F45233C531200F516D1 /* HHFileManager.swift in Sources */,
 				F50FA58E1E9D0800009A2814 /* UIButton+AFNetworking.m in Sources */,
 				F5146AAF1E8A453700E28892 /* HHBaseVC.swift in Sources */,
 				F50FA5301E9CB8C5009A2814 /* HHTTPRequest.swift in Sources */,
@@ -1367,11 +1385,13 @@
 				F50FA58F1E9D0800009A2814 /* UIImageView+AFNetworking.m in Sources */,
 				9436EDC4233B3899000BAA2B /* HHMainViewController.swift in Sources */,
 				042AB031209B5B1500FF3BC6 /* Bundel+EXT.swift in Sources */,
+				94DA1F47233C594800F516D1 /* HHFileManagerViewController.swift in Sources */,
 				F54598101FB1D081009CCDA2 /* HHAddDemoVC.swift in Sources */,
 				F56224EA1EA5F5EE00CC73FB /* UIViewController+EXT.swift in Sources */,
 				F50FA5821E9D0800009A2814 /* AFHTTPSessionManager.m in Sources */,
 				9436EDBE233B19C8000BAA2B /* HHBaseViewModel.swift in Sources */,
 				04FF1BF22084AC7D004E294A /* HHBaseMode.swift in Sources */,
+				94DA1F4C233C6BB200F516D1 /* HHRxSwiftViewController.swift in Sources */,
 				F5AC1B8D1E962353002D9BF5 /* HHAnimation5.swift in Sources */,
 				F5EE9A6A1EB1DFE800AD0745 /* HHAnimationTransition.swift in Sources */,
 				F50FA5561E9CDFC5009A2814 /* HHTool.swift in Sources */,
