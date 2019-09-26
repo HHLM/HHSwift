@@ -18,6 +18,15 @@ import RxCocoa
 struct Student {
     
 }
+/**
+ MVC
+ Model 、View、ViewController
+ 数据处理 |交互 | 逻辑处理 更新数据 刷新UI
+ MVVM
+ Model 、View、ViewModel、ViewController
+ 数据处理 | 用户输入行为，显示输出状态 | 逻辑层，将用户的输入行为，转为输出x状态 | 主要负责数据绑定
+ 减轻VC的负担、和控制器，view相互独立
+ */
 
 class HHRxSwiftViewController: HHBaseVC {
     
@@ -32,8 +41,12 @@ class HHRxSwiftViewController: HHBaseVC {
         rx_rac_tap()
         rx_creatObserver()
 //        creatBehaviorSubject()
-//        creatReplaySubject()
+        creatReplaySubject()
         creatPublicSubject()
+//        rx_filter()
+//        rx_map()
+//        rx_skip()
+        rx_flatMap()
 //        let d:Driver = self.nameTF.rx.text.asDriver()
 //        let s:Driver = self.sureBtn.rx.tap.asDriver()
 //        let l = showInfoLab.rx.text
@@ -41,14 +54,54 @@ class HHRxSwiftViewController: HHBaseVC {
 //        d.drive(l)
 //        s.drive(onNext: {
 //        })
-        
     }
 }
 
 
+//MARK:操作符
 extension HHRxSwiftViewController {
-
     
+    //MARK:信号转换
+    func rx_map() {
+        Observable.of(10,100)
+            .map { $0 * 10}
+            .subscribe(onNext: {print($0)})
+            .disposed(by: DisposeBag())
+    }
+    
+    //MARK:将observable的元素转成其他的observable，然后合并
+    func rx_flatMap() {
+        let subject1 = BehaviorSubject.init(value: "A")
+        let subject2 = BehaviorSubject.init(value: "B")
+        Observable.of(subject1,subject2)
+            .flatMap { $0}
+            .subscribe(onNext: {print($0)})
+            .disposed(by: DisposeBag())
+        subject1.onNext("HHH")
+        subject2.onNext("MMM")
+    }
+    
+    //MARK:过滤
+    func rx_filter() {
+        let disposebag = DisposeBag()
+        Observable.of(10,100)
+            .filter { $0 > 2}
+            .subscribe(onNext: { print($0)})
+            .disposed(by:disposebag)
+    }
+    
+    //MARK:跳过信号count
+    func rx_skip() {
+        Observable.of(10,100)
+        .map { $0 * 10}
+        .skip(1)
+        .subscribe(onNext: {print($0)})
+        .disposed(by: DisposeBag())
+    }
+}
+
+//MARK:创建subject
+extension HHRxSwiftViewController {
     func creatBehaviorSubject() {
         let disposeBag = DisposeBag()
         let subject = BehaviorSubject(value: "🔴")
@@ -75,7 +128,7 @@ extension HHRxSwiftViewController {
         subject.onNext("🍊")
     }
     func creatReplaySubject() {
-        let subject:ReplaySubject = ReplaySubject<Any>.create(bufferSize: 0)
+        let subject:ReplaySubject = ReplaySubject<Any>.create(bufferSize: 4)
         let disposeBag = DisposeBag()
         subject
             .subscribe{ print("success : 1 Event：",$0)}
@@ -143,9 +196,10 @@ extension HHRxSwiftViewController {
 //MARK:响应式编程
 extension HHRxSwiftViewController {
     func rx_rac_tap() {
-        sureBtn.rx.tap.asObservable().subscribe(onNext: {
+        sureBtn.rx.tap.asObservable()
+            .subscribe(onNext: {
             DLog("touch up in")
-        })
+            }).disposed(by: DisposeBag())
 
     }
 }
