@@ -8,11 +8,14 @@
 
 import UIKit
 
+
+
 class HHMainViewController: HHBaseVC {
 
+    
     lazy var table:UITableView = UITableView()
     
-    var dataArray:Array<String> = []
+    var dataArray:Array<Student> = []
     
     //懒加载
     fileprivate lazy var headView:UIView = {
@@ -67,7 +70,8 @@ extension HHMainViewController: UITableViewDataSource,UITableViewDelegate {
         //*!!!: 3、方法三
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? HHBaseTableViewCell.init(style: HHBaseTableViewCell.CellStyle.default, reuseIdentifier: "cell")
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator;
-        cell.textLabel?.text = dataArray[indexPath.row]
+        let student = dataArray[indexPath.row]
+        cell.textLabel?.text = student.name
         return cell;
         
     }
@@ -83,7 +87,8 @@ extension HHMainViewController: UITableViewDataSource,UITableViewDelegate {
 extension HHMainViewController {
     func getData()  {
         for index in 0..<10 {
-            dataArray.append("\(index)"+"H")
+            let student = Student.init(name: "长江\(index)号", age: 10)
+            dataArray.append(student)
         }
     }
 }

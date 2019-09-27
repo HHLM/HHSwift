@@ -35,7 +35,10 @@ let ss = Person.init(doesNotNeedToBeSettable: 12, mustBeSettable: 34)
 
 
 class Starship:SomeProtocol {
-    internal static func sometypeMethod() {
+//    internal static func sometypeMethod() {
+//
+//    }
+    static func sometypeMethod() {
         
     }
 

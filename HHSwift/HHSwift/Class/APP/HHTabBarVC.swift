@@ -12,7 +12,9 @@ class HHTabBarVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let first = HHMainViewController()
+//        let first = HHMainViewController()
+        
+        let first = HHRxSwiftViewController()
 
         let second = SecondViewController()
         
@@ -20,10 +22,10 @@ class HHTabBarVC: UITabBarController {
         
         let forth = ForthViewController()
        
-        let items = [addItem(titel: "首页", imgae: "home", selectImage: "home_selected", viewController: first),
-                     addItem(titel: "新闻", imgae: "page", selectImage: "page_selected", viewController: second),
+        let items = [addItem(titel: "首页", imgae: "home",  selectImage: "home_selected",  viewController: first),
+                     addItem(titel: "新闻", imgae: "page",  selectImage: "page_selected",  viewController: second),
                      addItem(titel: "视频", imgae: "video", selectImage: "video_selected", viewController: third),
-                     addItem(titel: "收藏", imgae: "like", selectImage: "like_selected", viewController: forth)]
+                     addItem(titel: "收藏", imgae: "like",  selectImage: "like_selected",  viewController: forth)]
        
         viewControllers = items
         

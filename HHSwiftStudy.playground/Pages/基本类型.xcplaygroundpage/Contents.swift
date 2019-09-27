@@ -4,8 +4,6 @@ import UIKit
 import Foundation
 
 
-
-
 var str = "Hello, playground"
 
 //: [Next](@next)
@@ -134,12 +132,15 @@ print(httpcode.2)
 var int:Int? = 1
 
 if let Hint = int {
-    print(int ?? 0)
+    print(Hint)
 }
 //或者下面的方法
 
 if int != nil {
     print(i)
 }
+
+// [下一页](@next)
+// [上一页](@previous)
 
 

@@ -48,6 +48,7 @@ class VendingMachine {
     ]
     
     var cionsDep = 0
+    
     func dispressScan(snack:String)  {
         print("\(snack)")
     }

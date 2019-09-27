@@ -32,3 +32,10 @@ for i  in (0 ..< 5).reversed()  {
     print(i)
 }
 
+for var i in 0..<10 {
+    print(i+1)
+}
+
+for i in 0...10 {
+    print("\(i)")
+}

@@ -102,7 +102,6 @@ class Bicycle {
 
 class HHH:Bicycle {
     override init () {
-    
         super.init()
         numberWheels = 2
     }
@@ -116,13 +115,10 @@ let hh = HHH()
 print(hh.description)
 
 class Food {
-    
     var name:String
-    
     init(name:String) {
         self.name = name
     }
-    
     convenience init () {
         self.init(name:"HHLM")
     }

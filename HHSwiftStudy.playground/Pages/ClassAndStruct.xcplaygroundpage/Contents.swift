@@ -6,30 +6,24 @@ var str = "Hello, playground"
 
 //: [Next](@next)
 
+//结构体是值类型（美枚举也是值类型），类是引用类型（指针类型）
+
 class SomeClass {
     
 }
 struct SomeStruct {
-    
-    
     var witdth = 0
     var height = 0
     var long = 0
-    
 }
 
 class Person {
     
     var model = SomeStruct()
-    
     var name:String?
     var age:Int?
     var heigth:String?
     var friend:String?
-    
-    
-    
-    
 }
 
 
@@ -166,14 +160,16 @@ print("立方体的体积:",cuble.volume)
  */
 
 class StepCounter {
-    var totalStep:Int  = 0 {
-        willSet(newTotalStep) {
-            print("新的数据\(newTotalStep)")
+    var totalStep:Int  = 199 {
+        willSet(a) {
+            print("新的数据\(a)")
         }
         
         didSet {
             if totalStep > oldValue {
                 print("adddeStep")
+            }else {
+                print("小于初始值")
             }
         }
     }
@@ -245,7 +241,3 @@ audio.currentLevel = 11
 
 
 print(AudioChannel.maxInputLevel)
-
-
-
-

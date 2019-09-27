@@ -5,6 +5,9 @@ import UIKit
 
 
 var dict = ["love":"HHLM"]
+
+dict["love"] = "HHL"
+
 dict.updateValue("HMM", forKey: "love")
 dict.updateValue("LLLL", forKey: "sss")
 dict.updateValue("11", forKey: "11")
