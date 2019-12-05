@@ -55,7 +55,7 @@ public func HHClassFromString(_ className:String) -> Swift.AnyClass? {
 //FIXME:修改我
 //TODO:单调
 public func DLog<T>(_ message:T,fileName:String = #file,method:String = #function,line:Int = #line) {
-
+    
     #if DEBUG
     let str = (fileName as NSString).pathComponents.last!.replacingOccurrences(of: ".swift", with: "")
     print("\(str) ->: \(method) ->: \(line)行 ->:\n \(message)")
